@@ -1,0 +1,16 @@
+
+
+$background: #363636;
+$color: #C2C2C2;
+$pink: #CC8F8F;
+
+
+body {
+  background: $background;
+  color: $color;
+  
+  a, a:visited, a:active {
+    color: $pink;
+    text-decoration: none;
+  }
+}

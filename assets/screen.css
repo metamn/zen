@@ -56,14 +56,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   font-size: 100%;
   line-height: 1.25em;
-  font-family: 'Old Standard TT', serif; }
+  font-family: 'Lato', sans-serif;
+  font-weight: 300; }
   body h1, body h2, body h3 {
     font-size: 1.33333em;
     padding: 1.25em 0;
-    margin: 0;
-    font-family: 'Lato', sans-serif; }
+    margin: 0; }
   body p + p {
     margin-top: 1.25em; }
+  body section {
+    font-size: 400%; }
+    body section h1 {
+      font-weight: 300; }
+    body section h2 {
+      font-weight: 300;
+      font-style: italic;
+      border-top: 1px solid;
+      border-bottom: 1px solid;
+      margin-bottom: 0.625em; }
+    body section p {
+      line-height: 1em;
+      font-size: 50%;
+      font-family: 'Open Sans', sans-serif; }
+    body section .preamble p {
+      letter-spacing: 5px; }
 
 /* Responsive mixins
   - http://paulstamatiou.com/responsive-retina-blog-development-part-1
@@ -74,6 +90,10 @@ body .page-wrapper {
   body .page-wrapper section {
     width: 100%;
     float: left; }
+    body .page-wrapper section .summary, body .page-wrapper section .preamble {
+      margin-bottom: 2.5em; }
+      body .page-wrapper section .summary p, body .page-wrapper section .preamble p {
+        width: 61.804%; }
   body .page-wrapper .main {
     width: 56.804%;
     margin-right: 5%;
@@ -81,5 +101,12 @@ body .page-wrapper {
   body .page-wrapper aside {
     width: 38.196%;
     float: left; }
-  body .page-wrapper .summary, body .page-wrapper .preamble, body .page-wrapper .explanation, body .page-wrapper .participation, body .page-wrapper .benefits, body .page-wrapper .requirements {
+  body .page-wrapper .explanation, body .page-wrapper .participation, body .page-wrapper .benefits, body .page-wrapper .requirements {
     max-width: 700px; }
+
+body {
+  background: #363636;
+  color: #c2c2c2; }
+  body a, body a:visited, body a:active {
+    color: #cc8f8f;
+    text-decoration: none; }
