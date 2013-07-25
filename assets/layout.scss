@@ -5,13 +5,33 @@ body {
     
     section {
       @include block;
+      margin-bottom: $pad*4;
       
-      .summary, .preamble {
-        margin-bottom: $pad*2;
+      header {
+        @include block;
         
-        p {
-          width: $major;
+        h1 {
+          width: $minor/2;
+          float: left;
         }
+        
+        h2 {
+          width: $minor;
+          float: left;
+        }
+      }
+      
+      .summary {
+        width: $minor;
+        margin-left: $minor/2 + $margin;
+        float: left;
+        
+        position: relative;
+        top: -5em;
+      }
+      
+      .preamble {
+        width: $major;
       }
     }
     
@@ -22,8 +42,16 @@ body {
     }
     
     aside {
-      width: $minor;
+      width: $minor - $margin;
+      margin-left: $major;
       float: left;
+      
+      position: absolute;
+      top: 30em;
+      
+      .wrapper {
+        padding: 0 $margin $margin;
+      }
     }
     
     .explanation, .participation, .benefits, .requirements {

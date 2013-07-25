@@ -5,6 +5,22 @@ $color: #C2C2C2;
 $pink: #CC8F8F;
 
 
+
+
+
+@mixin invert {
+  background: $color;
+  color: $background;
+}
+
+@mixin list($color: $background) {
+  li {
+    border-bottom: 1px dotted $color;
+    padding: $pad/2 0;
+  }
+}
+
+
 body {
   background: $background;
   color: $color;
@@ -12,5 +28,57 @@ body {
   a, a:visited, a:active {
     color: $pink;
     text-decoration: none;
+  }
+  
+  .page-wrapper {
+    section {
+      header {
+        h1 {
+          font-size: 400%;
+          word-wrap: break-word;
+          
+          @include invert;
+        }
+      }
+      
+      .summary {
+        p {
+          font-size: 200%;
+          padding: $pad;
+        }
+      }
+      
+      .preamble {
+        font-family: 'Source Code Pro', serif;
+        font-size: 150%;
+        
+        p {
+          border-left: $pad*4 solid;
+          padding-left: $pad;
+        }
+      }
+    }
+    
+    aside {
+      background: lighten($background, 5%);
+      
+      nav {
+        ul {
+          @include list($background);
+          
+          li {
+            a {
+              &.designer-name {
+                color: darken($pink, 50%);
+                
+                &:hover {
+                  color: $pink;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

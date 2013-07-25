@@ -1,54 +1,26 @@
 body {
-  font-size: 100%;
+  font-size: 100%;    
   line-height: 1.25em;
-  
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  
-  
-  h1, h2, h3 {
-    font-size: 1.33333em;
-    padding: 1.25em 0;
-    margin: 0;
+    
+  .page-wrapper {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    
+    h1, h2, h3, p {
+      line-height: 1.25em;
+    }
+    
+    h1, h2, h3 {
+      font-size: 1.33333em;
+      padding: 1.25em 0;
+      margin: 0;
+    }
+    
+   
+    p + p {
+      margin-top: $pad;
+    }
     
     
   }
- 
-  p + p {
-    margin-top: $pad;
-  }
-  
-  
-  section {
-    font-size: 400%;
-    
-    
-    h1 {
-      font-weight: 300;
-    }
-    
-    h2 {
-      font-weight: 300;
-      font-style: italic;
-      
-      border-top: 1px solid;
-      border-bottom: 1px solid;
-      margin-bottom: $pad/2;
-    }
-    
-    p {
-      line-height: 1em;
-      font-size: 50%;
-      
-      font-family: 'Open Sans', sans-serif;
-    }
-    
-    
-    .preamble {
-      p {
-        letter-spacing: 5px;
-      }
-    }
-  }
-
 }
