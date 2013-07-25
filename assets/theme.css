@@ -1,9 +1,9 @@
 /*
 Syntax error: Undefined variable: "$pad".
-        on line 52 of /home/cs/work/zen/assets/theme.scss
+        on line 64 of /home/cs/work/zen/assets/theme.scss
 
 Backtrace:
-/home/cs/work/zen/assets/theme.scss:52
+/home/cs/work/zen/assets/theme.scss:64
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/script/variable.rb:49:in `_perform'
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/script/node.rb:40:in `perform'
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/script/operation.rb:74:in `_perform'
@@ -106,4 +106,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$pad\".\A         on line 52 of /home/cs/work/zen/assets/theme.scss"; }
+  content: "Syntax error: Undefined variable: \"$pad\".\A         on line 64 of /home/cs/work/zen/assets/theme.scss"; }

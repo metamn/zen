@@ -86,6 +86,9 @@ body .page-wrapper {
       margin-top: 2.5em; }
       body .page-wrapper aside .design-archives h3, body .page-wrapper aside .zen-resources h3 {
         display: none; }
+  body .page-wrapper footer {
+    width: 33.196%;
+    float: right; }
 
 body {
   background: #363636;
@@ -108,26 +111,47 @@ body {
     padding-bottom: 2.5em; }
     body .page-wrapper section .preamble h3, body .page-wrapper section .preamble p {
       font-size: 200%; }
-  body .page-wrapper .main .explanation p {
-    background: #292929;
-    width: 40em;
-    height: 30em;
-    border-radius: 20em;
-    padding-top: 10em;
-    font-size: large;
-    font-weight: bold;
-    border-bottom: 1px dotted;
-    letter-spacing: 10px;
+  body .page-wrapper .main .explanation {
+    font-size: large; }
+    body .page-wrapper .main .explanation p {
+      background: #292929;
+      width: 40em;
+      height: 30em;
+      border-radius: 20em;
+      padding-top: 10em;
+      font-weight: bold;
+      border-bottom: 1px dotted;
+      letter-spacing: 10px;
+      text-align: center;
+      line-height: 2; }
+    body .page-wrapper .main .explanation p + p {
+      font-family: 'Source Code Pro', serif;
+      letter-spacing: 5px;
+      text-shadow: 1px 1px #fff;
+      border-bottom: none;
+      font-weight: normal;
+      background: #c2c2c2;
+      color: #363636; }
+  body .page-wrapper .main .participation {
+    font-size: 150%; }
+    body .page-wrapper .main .participation p {
+      border-left: 7.5em solid #292929;
+      padding-left: 1.25em; }
+  body .page-wrapper .main .benefits {
     text-align: center;
-    line-height: 2; }
-  body .page-wrapper .main .explanation p + p {
-    font-family: 'Source Code Pro', serif;
-    letter-spacing: 5px;
-    text-shadow: 1px 1px #fff;
-    border-bottom: none;
-    font-weight: normal;
-    background: #c2c2c2;
-    color: #363636; }
+    margin: 12.5em 0;
+    padding: 6.25em;
+    font-size: 150%;
+    border-top: 1px solid;
+    border-bottom: 1px solid; }
+  body .page-wrapper .main .requirements p {
+    width: 45%;
+    margin-right: 10%;
+    float: left;
+    padding: 2.5em 0; }
+  body .page-wrapper .main .requirements p + p {
+    margin-right: 0;
+    margin-top: 0; }
   body .page-wrapper aside {
     background: #434343;
     height: 100%; }

@@ -24,5 +24,10 @@ body {
       }
     }
     
+    footer {
+      width: $minor - $margin;
+      float: right;
+    }
+    
   }
 }

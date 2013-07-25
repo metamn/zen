@@ -20,6 +20,18 @@ $pink: #CC8F8F;
   }
 }
 
+@mixin rotate($degrees) {
+  -webkit-transform: rotate(#{$degrees}deg);
+  -moz-transform: rotate(#{$degrees}deg);
+  -ms-transform: rotate(#{$degrees}deg);
+  -o-transform: rotate(#{$degrees}deg);
+  transform: rotate(#{$degrees}deg);
+
+  filter:  progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=-#{sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)});
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=-#{sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)})";
+  zoom: 1;
+}
+
 
 body {
   background: $background;
@@ -62,6 +74,8 @@ body {
     
     .main {
       .explanation {
+        font-size: large;
+        
         p {
           background: darken($background, 5%);
           width: 40em;
@@ -70,7 +84,6 @@ body {
           
           padding-top: 10em;
           
-          font-size: large;
           font-weight: bold;
           border-bottom: 1px dotted;
           
@@ -88,6 +101,41 @@ body {
           border-bottom: none;
           font-weight: normal;
           @include invert;
+        }
+      }
+      
+      .participation {
+        font-size: 150%;
+        
+        p {
+          border-left: 7.5em solid darken($background, 5%);
+          padding-left: $pad;
+        }
+      }
+      
+      .benefits {
+        text-align: center;
+        
+        margin: $pad*10 0;
+        padding: $pad*5;
+        font-size: 150%;
+        
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+      }
+      
+      .requirements {
+        p {
+          width: 45%;
+          margin-right: 10%;
+          float: left;
+          
+          padding: $pad*2 0;
+        }
+        
+        p + p  {
+          margin-right: 0;
+          margin-top: 0;
         }
       }
     }
