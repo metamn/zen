@@ -93,6 +93,41 @@ body {
   body a, body a:visited, body a:active {
     color: #cc8f8f;
     text-decoration: none; }
+  body .page-wrapper section header h1 {
+    font-size: 200%;
+    border-bottom: 1px solid; }
+  body .page-wrapper section header h2 {
+    font-size: 400%; }
+  body .page-wrapper section .summary {
+    font-size: 150%; }
+  body .page-wrapper section .preamble {
+    margin-top: 17.5em;
+    background: #c2c2c2;
+    color: #363636;
+    padding: 1.25em;
+    padding-bottom: 2.5em; }
+    body .page-wrapper section .preamble h3, body .page-wrapper section .preamble p {
+      font-size: 200%; }
+  body .page-wrapper .main .explanation p {
+    background: #292929;
+    width: 40em;
+    height: 30em;
+    border-radius: 20em;
+    padding-top: 10em;
+    font-size: large;
+    font-weight: bold;
+    border-bottom: 1px dotted;
+    letter-spacing: 10px;
+    text-align: center;
+    line-height: 2; }
+  body .page-wrapper .main .explanation p + p {
+    font-family: 'Source Code Pro', serif;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px #fff;
+    border-bottom: none;
+    font-weight: normal;
+    background: #c2c2c2;
+    color: #363636; }
   body .page-wrapper aside {
     background: #434343;
     height: 100%; }
