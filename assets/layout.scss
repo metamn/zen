@@ -1,0 +1,25 @@
+body {
+  .page-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    
+    section {
+      @include block;
+    }
+    
+    .main {
+      width: $major - $margin;
+      margin-right: $margin;
+      float: left;
+    }
+    
+    aside {
+      width: $minor;
+      float: left;
+    }
+    
+    .summary, .preamble, .explanation, .participation, .benefits, .requirements {
+      max-width: 700px;
+    }
+  }
+}
