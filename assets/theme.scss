@@ -16,7 +16,7 @@ $pink: #CC8F8F;
 @mixin list($color: $background) {
   li {
     border-bottom: 1px dotted $color;
-    padding: $pad/2 0;
+    padding: $pad/4 0;
   }
 }
 
@@ -31,52 +31,16 @@ body {
   }
   
   .page-wrapper {
-    section {
-      header {
-        h1 {
-          font-size: 400%;
-          word-wrap: break-word;
-          
-          @include invert;
-        }
-      }
-      
-      .summary {
-        p {
-          font-size: 200%;
-          padding: $pad;
-        }
-      }
-      
-      .preamble {
-        font-family: 'Source Code Pro', serif;
-        font-size: 150%;
-        
-        p {
-          border-left: $pad*4 solid;
-          padding-left: $pad;
-        }
-      }
-    }
     
     aside {
       background: lighten($background, 5%);
+      height: 100%;
       
-      nav {
+      .wrapper {
+        padding: $pad;
+        
         ul {
-          @include list($background);
-          
-          li {
-            a {
-              &.designer-name {
-                color: darken($pink, 50%);
-                
-                &:hover {
-                  color: $pink;
-                }
-              }
-            }
-          }
+          @include list;
         }
       }
     }

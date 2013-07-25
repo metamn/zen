@@ -3,59 +3,26 @@ body {
     width: 90%;
     margin: 0 auto;
     
-    section {
-      @include block;
-      margin-bottom: $pad*4;
-      
-      header {
-        @include block;
-        
-        h1 {
-          width: $minor/2;
-          float: left;
-        }
-        
-        h2 {
-          width: $minor;
-          float: left;
-        }
-      }
-      
-      .summary {
-        width: $minor;
-        margin-left: $minor/2 + $margin;
-        float: left;
-        
-        position: relative;
-        top: -5em;
-      }
-      
-      .preamble {
-        width: $major;
-      }
-    }
-    
-    .main {
-      width: $major - $margin;
-      margin-right: $margin;
+    section, .main {
+      width: $major;
       float: left;
     }
     
     aside {
       width: $minor - $margin;
-      margin-left: $major;
-      float: left;
+      float: right;
       
-      position: absolute;
-      top: 30em;
+      position: fixed;
+      left: $major + $margin;
       
-      .wrapper {
-        padding: 0 $margin $margin;
+      .design-archives, .zen-resources {
+        margin-top: $pad*2;
+        
+        h3 {
+          display: none;
+        }
       }
     }
     
-    .explanation, .participation, .benefits, .requirements {
-      max-width: 700px;
-    }
   }
 }

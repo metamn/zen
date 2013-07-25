@@ -74,41 +74,18 @@ body {
 body .page-wrapper {
   width: 90%;
   margin: 0 auto; }
-  body .page-wrapper section {
-    width: 100%;
-    float: left;
-    margin-bottom: 5em; }
-    body .page-wrapper section header {
-      width: 100%;
-      float: left; }
-      body .page-wrapper section header h1 {
-        width: 19.098%;
-        float: left; }
-      body .page-wrapper section header h2 {
-        width: 38.196%;
-        float: left; }
-    body .page-wrapper section .summary {
-      width: 38.196%;
-      margin-left: 24.098%;
-      float: left;
-      position: relative;
-      top: -5em; }
-    body .page-wrapper section .preamble {
-      width: 61.804%; }
-  body .page-wrapper .main {
-    width: 56.804%;
-    margin-right: 5%;
+  body .page-wrapper section, body .page-wrapper .main {
+    width: 61.804%;
     float: left; }
   body .page-wrapper aside {
     width: 33.196%;
-    margin-left: 61.804%;
-    float: left;
-    position: absolute;
-    top: 30em; }
-    body .page-wrapper aside .wrapper {
-      padding: 0 5% 5%; }
-  body .page-wrapper .explanation, body .page-wrapper .participation, body .page-wrapper .benefits, body .page-wrapper .requirements {
-    max-width: 700px; }
+    float: right;
+    position: fixed;
+    left: 66.804%; }
+    body .page-wrapper aside .design-archives, body .page-wrapper aside .zen-resources {
+      margin-top: 2.5em; }
+      body .page-wrapper aside .design-archives h3, body .page-wrapper aside .zen-resources h3 {
+        display: none; }
 
 body {
   background: #363636;
@@ -116,26 +93,11 @@ body {
   body a, body a:visited, body a:active {
     color: #cc8f8f;
     text-decoration: none; }
-  body .page-wrapper section header h1 {
-    font-size: 400%;
-    word-wrap: break-word;
-    background: #c2c2c2;
-    color: #363636; }
-  body .page-wrapper section .summary p {
-    font-size: 200%;
-    padding: 1.25em; }
-  body .page-wrapper section .preamble {
-    font-family: 'Source Code Pro', serif;
-    font-size: 150%; }
-    body .page-wrapper section .preamble p {
-      border-left: 5em solid;
-      padding-left: 1.25em; }
   body .page-wrapper aside {
-    background: #434343; }
-    body .page-wrapper aside nav ul li {
-      border-bottom: 1px dotted #363636;
-      padding: 0.625em 0; }
-    body .page-wrapper aside nav ul li a.designer-name {
-      color: #3f1d1d; }
-      body .page-wrapper aside nav ul li a.designer-name:hover {
-        color: #cc8f8f; }
+    background: #434343;
+    height: 100%; }
+    body .page-wrapper aside .wrapper {
+      padding: 1.25em; }
+      body .page-wrapper aside .wrapper ul li {
+        border-bottom: 1px dotted #363636;
+        padding: 0.3125em 0; }
