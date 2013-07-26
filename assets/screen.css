@@ -111,10 +111,13 @@ body {
     margin-top: 17.5em;
     background: #c2c2c2;
     color: #363636;
-    padding: 1.25em;
-    padding-bottom: 2.5em; }
+    padding: 1.25em 3.75em 3.75em; }
     body .page-wrapper section .preamble h3, body .page-wrapper section .preamble p {
       font-size: 200%; }
+    body .page-wrapper section .preamble h3 {
+      padding-bottom: 0;
+      margin-bottom: 1.25em;
+      border-bottom: 4px double; }
   body .page-wrapper .main .explanation {
     font-size: large; }
     body .page-wrapper .main .explanation p {
@@ -122,9 +125,8 @@ body {
       width: 40em;
       height: 30em;
       border-radius: 20em;
-      padding-top: 10em;
-      font-weight: bold;
       border-bottom: 1px dotted;
+      padding-top: 10em;
       letter-spacing: 10px;
       text-align: center;
       line-height: 2; }
@@ -139,28 +141,43 @@ body {
   body .page-wrapper .main .participation {
     font-size: 150%; }
     body .page-wrapper .main .participation p {
-      border-left: 7.5em solid #292929;
+      font-style: italic;
+      letter-spacing: 1px;
+      font-size: 90%;
+      border-left: 8em solid #292929;
       padding-left: 1.25em; }
+    body .page-wrapper .main .participation p + p {
+      margin-top: 3.125em; }
   body .page-wrapper .main .benefits {
     text-align: center;
-    margin: 12.5em 0;
-    padding: 6.25em;
-    font-size: 150%;
-    border-top: 1px solid;
-    border-bottom: 1px solid; }
-  body .page-wrapper .main .requirements p {
-    width: 45%;
-    margin-right: 10%;
-    float: left;
-    padding: 2.5em 0; }
-  body .page-wrapper .main .requirements p:nth-child(odd) {
-    margin-right: 0;
-    margin-top: 0; }
-  body .page-wrapper .main .requirements p:nth-child(6) {
-    width: 100%;
-    float: left; }
-  body .page-wrapper .main .requirements p + p {
-    margin-top: 0; }
+    margin: 6.25em 0;
+    border-top: 4px double;
+    border-bottom: 4px double; }
+    body .page-wrapper .main .benefits h3 {
+      font-family: "Nothing You Could Do", cursive;
+      font-size: 600%; }
+    body .page-wrapper .main .benefits p {
+      font-family: "Voltaire", sans-serif;
+      font-size: 200%;
+      padding: 0 2.5em 1.25em; }
+  body .page-wrapper .main .requirements {
+    font-size: large; }
+    body .page-wrapper .main .requirements h3, body .page-wrapper .main .requirements p:first-line {
+      font-variant: small-caps;
+      font-weight: bold; }
+    body .page-wrapper .main .requirements p {
+      width: 45%;
+      margin-right: 10%;
+      float: left;
+      padding-bottom: 2.5em; }
+    body .page-wrapper .main .requirements p:nth-child(odd) {
+      margin-right: 0;
+      margin-top: 0; }
+    body .page-wrapper .main .requirements p:nth-child(6) {
+      width: 100%;
+      float: left; }
+    body .page-wrapper .main .requirements p + p {
+      margin-top: 0; }
   body .page-wrapper aside {
     background: #434343;
     height: 100%; }

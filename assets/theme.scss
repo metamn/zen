@@ -63,12 +63,18 @@ body {
       .preamble {
         margin-top: $pad*14;
         @include invert;
-        padding: $pad;
-        padding-bottom: $pad*2;
+        padding: $pad $pad*3 $pad*3;
         
         h3, p {
           font-size: 200%;
         }
+        
+        h3 {
+          padding-bottom: 0;
+          margin-bottom: $pad;
+          border-bottom: 4px double;
+        }
+        
       }
     } 
     
@@ -81,16 +87,14 @@ body {
           width: 40em;
           height: 30em;
           border-radius: 20em;
+          border-bottom: 1px dotted;
           
           padding-top: 10em;
           
-          font-weight: bold;
-          border-bottom: 1px dotted;
           
           letter-spacing: 10px;
           text-align: center;
           line-height: 2;
-          
         }
         
         p + p {
@@ -108,29 +112,53 @@ body {
         font-size: 150%;
         
         p {
-          border-left: 7.5em solid darken($background, 5%);
+          font-style: italic;
+          letter-spacing: 1px;
+          font-size: 90%;
+          
+          border-left: 8em solid darken($background, 5%);
           padding-left: $pad;
+        }
+        
+        p + p {
+          margin-top: $pad*2 + $pad/2;
         }
       }
       
       .benefits {
         text-align: center;
         
-        margin: $pad*10 0;
-        padding: $pad*5;
-        font-size: 150%;
+        margin: $pad*5 0;
         
-        border-top: 1px solid;
-        border-bottom: 1px solid;
+        border-top: 4px double;
+        border-bottom: 4px double;
+        
+        h3 {
+          font-family: "Nothing You Could Do", cursive;
+          font-size: 600%;
+        }
+        
+        p {
+          font-family: "Voltaire", sans-serif;
+          font-size: 200%;
+          padding: 0 $pad*2 $pad;
+        }
       }
       
       .requirements {
+        font-size: large;
+        
+        h3, p:first-line {
+          font-variant: small-caps;
+          font-weight: bold;
+        }
+        
         p {
           width: 45%;
           margin-right: 10%;
           float: left;
           
-          padding: $pad*2 0;
+          padding-bottom: $pad*2;
         }
         
         p:nth-child(odd)  {
