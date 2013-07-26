@@ -1,11 +1,11 @@
 /*
 Syntax error: Undefined mixin 'tablet-and-below'.
-        on line 58 of /home/cs/work/zen/assets/theme.scss, in `tablet-and-below'
-        from line 58 of /home/cs/work/zen/assets/theme.scss
+        on line 66 of /home/cs/work/zen/assets/theme.scss, in `tablet-and-below'
+        from line 66 of /home/cs/work/zen/assets/theme.scss
 
 Backtrace:
-/home/cs/work/zen/assets/theme.scss:58:in `tablet-and-below'
-/home/cs/work/zen/assets/theme.scss:58
+/home/cs/work/zen/assets/theme.scss:66:in `tablet-and-below'
+/home/cs/work/zen/assets/theme.scss:66
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
@@ -104,4 +104,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'tablet-and-below'.\A         on line 58 of /home/cs/work/zen/assets/theme.scss, in `tablet-and-below'\A         from line 58 of /home/cs/work/zen/assets/theme.scss"; }
+  content: "Syntax error: Undefined mixin 'tablet-and-below'.\A         on line 66 of /home/cs/work/zen/assets/theme.scss, in `tablet-and-below'\A         from line 66 of /home/cs/work/zen/assets/theme.scss"; }

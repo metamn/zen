@@ -4,6 +4,13 @@ $background: #363636;
 $color: #C2C2C2;
 $pink: #CC8F8F;
 
+$red: #D45555;
+$yellow: #D4D4AA;
+$bordo: #4C3636;
+$lila: #D98DD9;
+$lila-2: #E394BB;
+$pink-2: #D9A38D;
+
 
 
 
@@ -49,6 +56,7 @@ body {
         h1 {
           font-size: 200%;
           border-bottom: 1px solid;
+          color: $red;
         }
         
         h2 {
@@ -85,6 +93,7 @@ body {
       .preamble {
         margin-top: $pad*14;
         @include invert;
+        background: $yellow;
         padding: $pad $pad*3 $pad*3;
         
         h3, p {
@@ -109,6 +118,10 @@ body {
             border-bottom: 1px solid;
           }
         }
+        
+        @include big-screen {
+          margin-top: $pad*24;
+        }
       }
     } 
     
@@ -117,7 +130,7 @@ body {
         font-size: large;
         
         p {
-          background: darken($background, 5%);
+          background: $bordo;
           width: 40em;
           height: 30em;
           @include border-radius(20em);
@@ -166,6 +179,7 @@ body {
             z-index: 2;
           }
         }
+        
       }
       
       .participation {
@@ -198,18 +212,20 @@ body {
         
         margin: $pad*5 0;
         
-        border-top: 4px double;
-        border-bottom: 4px double;
+        border-top: 4px double $lila;
+        border-bottom: 4px double $lila;
         
         h3 {
           font-family: "Nothing You Could Do", cursive;
           font-size: 600%;
+          color: $lila-2;
         }
         
         p {
           font-family: "Voltaire", sans-serif;
           font-size: 200%;
           padding: 0 $pad*2 $pad;
+          color: $pink-2;
         }
         
         @include mobile {
@@ -251,6 +267,7 @@ body {
           font-weight: bold;
         }
         
+        
         p {
           width: 45%;
           margin-right: 10%;
@@ -266,6 +283,7 @@ body {
         
         p:nth-child(6) {
           @include block;
+          margin-top: $pad;
         }
         
         p+p {

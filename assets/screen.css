@@ -128,7 +128,8 @@ body {
     text-decoration: none; }
   body .page-wrapper section header h1 {
     font-size: 200%;
-    border-bottom: 1px solid; }
+    border-bottom: 1px solid;
+    color: #d45555; }
   body .page-wrapper section header h2 {
     font-size: 400%; }
   @media only screen and (max-width: 767px) {
@@ -151,6 +152,7 @@ body {
     margin-top: 17.5em;
     background: #c2c2c2;
     color: #363636;
+    background: #d4d4aa;
     padding: 1.25em 3.75em 3.75em; }
     body .page-wrapper section .preamble h3, body .page-wrapper section .preamble p {
       font-size: 200%; }
@@ -166,10 +168,13 @@ body {
           font-size: 100%; }
         body .page-wrapper section .preamble h3 {
           border-bottom: 1px solid; } }
+    @media only screen and (min-width: 1401px) {
+      body .page-wrapper section .preamble {
+        margin-top: 30em; } }
   body .page-wrapper .main .explanation {
     font-size: large; }
     body .page-wrapper .main .explanation p {
-      background: #292929;
+      background: #4c3636;
       width: 40em;
       height: 30em;
       -webkit-border-radius: 20em;
@@ -227,15 +232,17 @@ body {
   body .page-wrapper .main .benefits {
     text-align: center;
     margin: 6.25em 0;
-    border-top: 4px double;
-    border-bottom: 4px double; }
+    border-top: 4px double #d98dd9;
+    border-bottom: 4px double #d98dd9; }
     body .page-wrapper .main .benefits h3 {
       font-family: "Nothing You Could Do", cursive;
-      font-size: 600%; }
+      font-size: 600%;
+      color: #e394bb; }
     body .page-wrapper .main .benefits p {
       font-family: "Voltaire", sans-serif;
       font-size: 200%;
-      padding: 0 2.5em 1.25em; }
+      padding: 0 2.5em 1.25em;
+      color: #d9a38d; }
     @media only screen and (max-width: 380px) {
       body .page-wrapper .main .benefits h3 {
         font-size: 300%; }
@@ -266,7 +273,8 @@ body {
       margin-top: 0; }
     body .page-wrapper .main .requirements p:nth-child(6) {
       width: 100%;
-      float: left; }
+      float: left;
+      margin-top: 1.25em; }
     body .page-wrapper .main .requirements p + p {
       margin-top: 0; }
     @media only screen and (max-width: 380px) {
