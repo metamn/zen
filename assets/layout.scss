@@ -3,6 +3,7 @@ body {
     width: 90%;
     margin: 0 auto;
     
+    
     section, .main {
       width: $major;
       float: left;
@@ -25,9 +26,12 @@ body {
     }
     
     footer {
-      width: $minor - $margin;
-      float: right;
+      position: relative;
+      z-index: 2;
+      width: $minor;
+      margin-left: 114%;
+      padding-bottom: $pad;
+      top: 36em;
     }
-    
   }
 }

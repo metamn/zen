@@ -133,10 +133,22 @@ body {
           padding: $pad*2 0;
         }
         
-        p + p  {
+        p:nth-child(odd)  {
           margin-right: 0;
           margin-top: 0;
         }
+        
+        p:nth-child(6) {
+          @include block;
+        }
+        
+        p+p {
+          margin-top: 0;
+        }
+      }
+      
+      footer {
+        
       }
     }
     

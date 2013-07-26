@@ -87,8 +87,12 @@ body .page-wrapper {
       body .page-wrapper aside .design-archives h3, body .page-wrapper aside .zen-resources h3 {
         display: none; }
   body .page-wrapper footer {
-    width: 33.196%;
-    float: right; }
+    position: relative;
+    z-index: 2;
+    width: 38.196%;
+    margin-left: 114%;
+    padding-bottom: 1.25em;
+    top: 36em; }
 
 body {
   background: #363636;
@@ -149,8 +153,13 @@ body {
     margin-right: 10%;
     float: left;
     padding: 2.5em 0; }
-  body .page-wrapper .main .requirements p + p {
+  body .page-wrapper .main .requirements p:nth-child(odd) {
     margin-right: 0;
+    margin-top: 0; }
+  body .page-wrapper .main .requirements p:nth-child(6) {
+    width: 100%;
+    float: left; }
+  body .page-wrapper .main .requirements p + p {
     margin-top: 0; }
   body .page-wrapper aside {
     background: #434343;
