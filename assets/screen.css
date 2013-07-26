@@ -89,6 +89,9 @@ body .page-wrapper {
     @media only screen and (max-width: 767px) {
       body .page-wrapper aside {
         margin-bottom: 1.25em; } }
+    @media only screen and (orientation: landscape) {
+      body .page-wrapper aside {
+        margin-bottom: 1.25em; } }
   body .page-wrapper footer {
     position: relative;
     z-index: 2;
@@ -96,11 +99,21 @@ body .page-wrapper {
     margin-left: 114%;
     padding-bottom: 1.25em;
     top: 36em; }
-    @media (max-width: 380px) {
+    @media only screen and (max-width: 767px) {
+      body .page-wrapper footer {
+        margin-left: 0;
+        top: 0; } }
+    @media only screen and (orientation: landscape) {
       body .page-wrapper footer {
         margin-left: 0;
         top: 0; } }
   @media only screen and (max-width: 767px) {
+    body .page-wrapper section, body .page-wrapper .main, body .page-wrapper aside, body .page-wrapper footer {
+      width: 100%;
+      float: left;
+      position: relative;
+      left: 0; } }
+  @media only screen and (orientation: landscape) {
     body .page-wrapper section, body .page-wrapper .main, body .page-wrapper aside, body .page-wrapper footer {
       width: 100%;
       float: left;
@@ -159,6 +172,10 @@ body {
       background: #292929;
       width: 40em;
       height: 30em;
+      -webkit-border-radius: 20em;
+      -moz-border-radius: 20em;
+      -ms-border-radius: 20em;
+      -o-border-radius: 20em;
       border-radius: 20em;
       border-bottom: 1px dotted;
       padding-top: 10em;
@@ -173,16 +190,25 @@ body {
       font-weight: normal;
       background: #c2c2c2;
       color: #363636; }
-    @media (max-width: 380px) {
+    @media only screen and (max-width: 767px) {
       body .page-wrapper .main .explanation h3 {
         text-align: center; }
       body .page-wrapper .main .explanation p {
         width: auto;
         height: auto;
-        padding: 2.5em 0;
+        -webkit-border-radius: 1em;
+        -moz-border-radius: 1em;
+        -ms-border-radius: 1em;
+        -o-border-radius: 1em;
+        border-radius: 1em;
+        padding: 2.5em 1.25em;
         letter-spacing: 7px; }
       body .page-wrapper .main .explanation p + p {
         letter-spacing: 4px; } }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      body .page-wrapper .main .explanation p {
+        position: relative;
+        z-index: 2; } }
   body .page-wrapper .main .participation {
     font-size: 150%; }
     body .page-wrapper .main .participation p {
@@ -193,7 +219,7 @@ body {
       padding-left: 1.25em; }
     body .page-wrapper .main .participation p + p {
       margin-top: 3.125em; }
-    @media (max-width: 380px) {
+    @media only screen and (max-width: 380px) {
       body .page-wrapper .main .participation {
         font-size: 100%; }
         body .page-wrapper .main .participation p {
@@ -210,11 +236,21 @@ body {
       font-family: "Voltaire", sans-serif;
       font-size: 200%;
       padding: 0 2.5em 1.25em; }
-    @media (max-width: 380px) {
+    @media only screen and (max-width: 380px) {
       body .page-wrapper .main .benefits h3 {
         font-size: 300%; }
       body .page-wrapper .main .benefits p {
         font-size: 110%; } }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      body .page-wrapper .main .benefits h3 {
+        font-size: 400%; }
+      body .page-wrapper .main .benefits p {
+        font-size: 150%; } }
+    @media only screen and (orientation: landscape) {
+      body .page-wrapper .main .benefits h3 {
+        font-size: 400%; }
+      body .page-wrapper .main .benefits p {
+        font-size: 150%; } }
   body .page-wrapper .main .requirements {
     font-size: large; }
     body .page-wrapper .main .requirements h3, body .page-wrapper .main .requirements p:first-line {
@@ -233,7 +269,7 @@ body {
       float: left; }
     body .page-wrapper .main .requirements p + p {
       margin-top: 0; }
-    @media (max-width: 380px) {
+    @media only screen and (max-width: 380px) {
       body .page-wrapper .main .requirements p {
         width: 100%;
         float: left;

@@ -27,6 +27,9 @@ body {
       @include tablet-and-below {
         margin-bottom: $pad;
       }
+      @include landscape {
+        margin-bottom: $pad;
+      }
     }
     
     footer {
@@ -37,7 +40,11 @@ body {
       padding-bottom: $pad;
       top: 36em;
       
-      @include mobile {
+      @include tablet-and-below {
+        margin-left: 0;
+        top: 0;
+      }
+      @include landscape {
         margin-left: 0;
         top: 0;
       }
@@ -52,5 +59,15 @@ body {
         left: 0;
       }
     }
+    
+    @include landscape {
+      section, .main, aside, footer {
+        @include block;
+        
+        position: relative;
+        left: 0;
+      }
+    }
+    
   }
 }
