@@ -160,7 +160,7 @@ body {
           }
         }
         
-        @include small-screen {
+        @include small-screen-and-up {
           p {
             position: relative;
             z-index: 2;

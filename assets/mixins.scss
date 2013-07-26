@@ -39,7 +39,7 @@ $breakpoint-big: 1400px !default;
 }
 
 @mixin landscape {
-  @media only screen and (orientation : landscape) {
+  @media only screen and (orientation : landscape) and (max-width : $breakpoint-small - 1) {
 		@content;
 	}
 }
