@@ -54,10 +54,32 @@ body {
         h2 {
           font-size: 400%;
         }
+        
+        @include tablet-and-below {
+          h1 {
+            font-size: 150%;
+          }
+          
+          h2 {
+            font-size: 200%;
+          }
+        }
       }
       
       .summary {
         font-size: 150%;
+        
+        @include tablet-and-below {
+          font-size: 100%;
+          
+          p:nth-child(1):after {
+            content: '(The list can found at the bottom of the page.)';
+            font-size: small;
+            font-style: italic;
+            margin-top: $pad/2;
+            display: block;
+          }
+        }
       }
       
       .preamble {
@@ -75,6 +97,18 @@ body {
           border-bottom: 4px double;
         }
         
+        @include tablet-and-below {
+          margin-top: $pad*2;
+          padding: $pad/2 $pad $pad;
+          
+          h3, p {
+            font-size: 100%;
+          }
+          
+          h3 {
+            border-bottom: 1px solid;
+          }
+        }
       }
     } 
     
@@ -106,6 +140,24 @@ body {
           font-weight: normal;
           @include invert;
         }
+        
+        @include mobile {
+          h3 {
+            text-align: center;
+          }
+          
+          p {
+            width: auto;
+            height: auto;
+            
+            padding: $pad*2 0;
+            letter-spacing: 7px;
+          }
+          
+          p + p {
+            letter-spacing: 4px;
+          }
+        }
       }
       
       .participation {
@@ -122,6 +174,14 @@ body {
         
         p + p {
           margin-top: $pad*2 + $pad/2;
+        }
+        
+        @include mobile {
+          font-size: 100%;
+          
+          p {
+            font-style: normal;
+          }
         }
       }
       
@@ -142,6 +202,16 @@ body {
           font-family: "Voltaire", sans-serif;
           font-size: 200%;
           padding: 0 $pad*2 $pad;
+        }
+        
+        @include mobile {
+          h3 {
+            font-size: 300%;
+          }
+          
+          p {
+            font-size: 110%;
+          }
         }
       }
       
@@ -173,11 +243,16 @@ body {
         p+p {
           margin-top: 0;
         }
+        
+        @include mobile {
+          p {
+            @include block;
+            margin-right: 0;
+          }
+        }
       }
       
-      footer {
-        
-      }
+      
     }
     
     aside {

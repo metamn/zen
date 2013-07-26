@@ -86,6 +86,9 @@ body .page-wrapper {
       margin-top: 2.5em; }
       body .page-wrapper aside .design-archives h3, body .page-wrapper aside .zen-resources h3 {
         display: none; }
+    @media only screen and (max-width: 767px) {
+      body .page-wrapper aside {
+        margin-bottom: 1.25em; } }
   body .page-wrapper footer {
     position: relative;
     z-index: 2;
@@ -93,6 +96,16 @@ body .page-wrapper {
     margin-left: 114%;
     padding-bottom: 1.25em;
     top: 36em; }
+    @media (max-width: 380px) {
+      body .page-wrapper footer {
+        margin-left: 0;
+        top: 0; } }
+  @media only screen and (max-width: 767px) {
+    body .page-wrapper section, body .page-wrapper .main, body .page-wrapper aside, body .page-wrapper footer {
+      width: 100%;
+      float: left;
+      position: relative;
+      left: 0; } }
 
 body {
   background: #363636;
@@ -105,8 +118,22 @@ body {
     border-bottom: 1px solid; }
   body .page-wrapper section header h2 {
     font-size: 400%; }
+  @media only screen and (max-width: 767px) {
+    body .page-wrapper section header h1 {
+      font-size: 150%; }
+    body .page-wrapper section header h2 {
+      font-size: 200%; } }
   body .page-wrapper section .summary {
     font-size: 150%; }
+    @media only screen and (max-width: 767px) {
+      body .page-wrapper section .summary {
+        font-size: 100%; }
+        body .page-wrapper section .summary p:nth-child(1):after {
+          content: '(The list can found at the bottom of the page.)';
+          font-size: small;
+          font-style: italic;
+          margin-top: 0.625em;
+          display: block; } }
   body .page-wrapper section .preamble {
     margin-top: 17.5em;
     background: #c2c2c2;
@@ -118,6 +145,14 @@ body {
       padding-bottom: 0;
       margin-bottom: 1.25em;
       border-bottom: 4px double; }
+    @media only screen and (max-width: 767px) {
+      body .page-wrapper section .preamble {
+        margin-top: 2.5em;
+        padding: 0.625em 1.25em 1.25em; }
+        body .page-wrapper section .preamble h3, body .page-wrapper section .preamble p {
+          font-size: 100%; }
+        body .page-wrapper section .preamble h3 {
+          border-bottom: 1px solid; } }
   body .page-wrapper .main .explanation {
     font-size: large; }
     body .page-wrapper .main .explanation p {
@@ -138,6 +173,16 @@ body {
       font-weight: normal;
       background: #c2c2c2;
       color: #363636; }
+    @media (max-width: 380px) {
+      body .page-wrapper .main .explanation h3 {
+        text-align: center; }
+      body .page-wrapper .main .explanation p {
+        width: auto;
+        height: auto;
+        padding: 2.5em 0;
+        letter-spacing: 7px; }
+      body .page-wrapper .main .explanation p + p {
+        letter-spacing: 4px; } }
   body .page-wrapper .main .participation {
     font-size: 150%; }
     body .page-wrapper .main .participation p {
@@ -148,6 +193,11 @@ body {
       padding-left: 1.25em; }
     body .page-wrapper .main .participation p + p {
       margin-top: 3.125em; }
+    @media (max-width: 380px) {
+      body .page-wrapper .main .participation {
+        font-size: 100%; }
+        body .page-wrapper .main .participation p {
+          font-style: normal; } }
   body .page-wrapper .main .benefits {
     text-align: center;
     margin: 6.25em 0;
@@ -160,6 +210,11 @@ body {
       font-family: "Voltaire", sans-serif;
       font-size: 200%;
       padding: 0 2.5em 1.25em; }
+    @media (max-width: 380px) {
+      body .page-wrapper .main .benefits h3 {
+        font-size: 300%; }
+      body .page-wrapper .main .benefits p {
+        font-size: 110%; } }
   body .page-wrapper .main .requirements {
     font-size: large; }
     body .page-wrapper .main .requirements h3, body .page-wrapper .main .requirements p:first-line {
@@ -178,6 +233,11 @@ body {
       float: left; }
     body .page-wrapper .main .requirements p + p {
       margin-top: 0; }
+    @media (max-width: 380px) {
+      body .page-wrapper .main .requirements p {
+        width: 100%;
+        float: left;
+        margin-right: 0; } }
   body .page-wrapper aside {
     background: #434343;
     height: 100%; }
