@@ -94,9 +94,9 @@ body .page-wrapper {
         margin-bottom: 1.25em; } }
   body .page-wrapper footer {
     position: fixed;
-    z-index: 3;
+    z-index: 2;
     width: auto;
-    left: 70%;
+    left: 68%;
     bottom: 1.25em;
     padding-bottom: 1.25em; }
     @media only screen and (max-width: 767px) {
@@ -142,7 +142,7 @@ body {
       body .page-wrapper section .summary {
         font-size: 100%; }
         body .page-wrapper section .summary p:nth-child(1):after {
-          content: '(The list can found at the bottom of the page.)';
+          content: '(The list can be found at the bottom of the page.)';
           font-size: small;
           font-style: italic;
           margin-top: 0.625em;
@@ -191,7 +191,8 @@ body {
       color: #363636; }
     @media only screen and (max-width: 767px) {
       body .page-wrapper .main .explanation h3 {
-        text-align: center; }
+        top: 0;
+        margin-left: 0; }
       body .page-wrapper .main .explanation p {
         width: auto;
         height: auto;
@@ -245,7 +246,8 @@ body {
     body .page-wrapper .main .benefits h3 {
       font-size: 300%; }
     body .page-wrapper .main .benefits p {
-      font-size: 110%; } }
+      font-size: 120%;
+      padding: 0 1.25em 1.25em; } }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     body .page-wrapper .main .benefits h3 {
       font-size: 400%; }
@@ -280,6 +282,12 @@ body {
         width: 100%;
         float: left;
         margin-right: 0; } }
+  body .page-wrapper .main footer a:after {
+    content: '\2713';
+    font-size: larger;
+    color: #5e7565;
+    padding-left: 0.3125em;
+    margin-right: 1.25em; }
   body .page-wrapper aside {
     background: #434343;
     height: 100%; }

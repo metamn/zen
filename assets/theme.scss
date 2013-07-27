@@ -81,7 +81,7 @@ body {
           font-size: 100%;
           
           p:nth-child(1):after {
-            content: '(The list can found at the bottom of the page.)';
+            content: '(The list can be found at the bottom of the page.)';
             font-size: small;
             font-style: italic;
             margin-top: $pad/2;
@@ -151,7 +151,8 @@ body {
         
         @include tablet-and-below {
           h3 {
-            text-align: center;
+            top: 0;
+            margin-left: 0;
           }
           
           p {
@@ -203,7 +204,6 @@ body {
       }
       
       .benefits {
-        
         h3 {
           font-family: "Nothing You Could Do", cursive;
           font-size: 600%;
@@ -226,7 +226,8 @@ body {
           }
           
           p {
-            font-size: 110%;
+            font-size: 120%;
+            padding: 0 $pad $pad;
           }
         }
         
@@ -290,7 +291,18 @@ body {
         }
       }
       
-      
+      footer {
+        a {
+          &:after {
+            content: '\2713';
+            font-size: larger;
+            color: $green;
+            
+            padding-left: $pad/4;
+            margin-right: $pad;
+          }
+        }
+      }
     }
     
     aside {
