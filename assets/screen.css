@@ -128,8 +128,7 @@ body {
     text-decoration: none; }
   body .page-wrapper section header h1 {
     font-size: 200%;
-    border-bottom: 1px solid;
-    color: #d45555; }
+    border-bottom: 1px solid; }
   body .page-wrapper section header h2 {
     font-size: 400%; }
   @media only screen and (max-width: 767px) {
@@ -149,30 +148,25 @@ body {
           margin-top: 0.625em;
           display: block; } }
   body .page-wrapper section .preamble {
-    margin-top: 17.5em;
-    background: #c2c2c2;
-    color: #363636;
-    background: #d4d4aa;
-    padding: 1.25em 3.75em 3.75em; }
+    margin-top: 5em;
+    background: #333333;
+    color: whitesmoke;
+    padding: 31.25em 3.75em 3.75em;
+    font-size: larger; }
     body .page-wrapper section .preamble h3, body .page-wrapper section .preamble p {
-      font-size: 200%; }
-    body .page-wrapper section .preamble h3 {
-      padding-bottom: 0;
-      margin-bottom: 1.25em;
-      border-bottom: 4px double; }
+      max-width: 700px; }
     @media only screen and (max-width: 767px) {
       body .page-wrapper section .preamble {
         margin-top: 2.5em;
-        padding: 0.625em 1.25em 1.25em; }
-        body .page-wrapper section .preamble h3, body .page-wrapper section .preamble p {
-          font-size: 100%; }
-        body .page-wrapper section .preamble h3 {
-          border-bottom: 1px solid; } }
-    @media only screen and (min-width: 1401px) {
-      body .page-wrapper section .preamble {
-        margin-top: 30em; } }
+        padding: 0.625em 1.25em 1.25em; } }
   body .page-wrapper .main .explanation {
     font-size: large; }
+    body .page-wrapper .main .explanation h3 {
+      text-align: center;
+      position: relative;
+      z-index: 3;
+      top: 6.25em;
+      margin-left: 6.25em; }
     body .page-wrapper .main .explanation p {
       background: #4c3636;
       width: 40em;
@@ -229,35 +223,39 @@ body {
         font-size: 100%; }
         body .page-wrapper .main .participation p {
           font-style: normal; } }
-  body .page-wrapper .main .benefits {
-    text-align: center;
-    margin: 6.25em 0;
-    border-top: 4px double #d98dd9;
-    border-bottom: 4px double #d98dd9; }
+  body .page-wrapper .main .benefits h3 {
+    font-family: "Nothing You Could Do", cursive;
+    font-size: 600%;
+    color: #e394bb;
+    text-decoration: underline;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=-0.83907, M12=-0.54402, M21=0.54402, M22=-0.83907);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=-0.83907, M12=-0.54402, M21=0.54402, M22=-0.83907)";
+    zoom: 1; }
+  body .page-wrapper .main .benefits p {
+    font-family: "Voltaire", sans-serif;
+    font-size: 200%;
+    padding: 0 2.5em 1.25em;
+    color: #d9a38d; }
+  @media only screen and (max-width: 380px) {
     body .page-wrapper .main .benefits h3 {
-      font-family: "Nothing You Could Do", cursive;
-      font-size: 600%;
-      color: #e394bb; }
+      font-size: 300%; }
     body .page-wrapper .main .benefits p {
-      font-family: "Voltaire", sans-serif;
-      font-size: 200%;
-      padding: 0 2.5em 1.25em;
-      color: #d9a38d; }
-    @media only screen and (max-width: 380px) {
-      body .page-wrapper .main .benefits h3 {
-        font-size: 300%; }
-      body .page-wrapper .main .benefits p {
-        font-size: 110%; } }
-    @media only screen and (min-width: 768px) and (max-width: 1023px) {
-      body .page-wrapper .main .benefits h3 {
-        font-size: 400%; }
-      body .page-wrapper .main .benefits p {
-        font-size: 150%; } }
-    @media only screen and (orientation: landscape) and (max-width: 1023px) {
-      body .page-wrapper .main .benefits h3 {
-        font-size: 400%; }
-      body .page-wrapper .main .benefits p {
-        font-size: 150%; } }
+      font-size: 110%; } }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    body .page-wrapper .main .benefits h3 {
+      font-size: 400%; }
+    body .page-wrapper .main .benefits p {
+      font-size: 150%; } }
+  @media only screen and (orientation: landscape) and (max-width: 1023px) {
+    body .page-wrapper .main .benefits h3 {
+      font-size: 400%; }
+    body .page-wrapper .main .benefits p {
+      font-size: 150%; } }
   body .page-wrapper .main .requirements {
     font-size: large; }
     body .page-wrapper .main .requirements h3, body .page-wrapper .main .requirements p:first-line {
@@ -290,3 +288,5 @@ body {
       body .page-wrapper aside .wrapper ul li {
         border-bottom: 1px dotted #363636;
         padding: 0.3125em 0; }
+      body .page-wrapper aside .wrapper ul li a {
+        font-variant: small-caps; }
