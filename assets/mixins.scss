@@ -57,7 +57,7 @@ $breakpoint-big: 1400px !default;
 }
 
 @mixin small-screen {
-	@media only screen and (min-width : $breakpoint-tablet + 1) and (max-width : $breakpoint-small - 1) {
+	@media only screen and (min-width : $breakpoint-tablet + 1) and (max-width : $breakpoint-small) {
 		@content;
 	}
 }
