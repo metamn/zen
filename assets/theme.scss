@@ -312,6 +312,15 @@ body {
             margin-right: $pad;
           }
         }
+        
+        @include small-screen {
+          font-size: small;
+          a {
+            &:after {
+              margin-right: $pad;
+            }
+          }
+        }
       }
     }
     
@@ -333,6 +342,9 @@ body {
         }
       }
       
+      @include small-screen {
+        font-size: small;
+      }
     }
   }
 }

@@ -291,6 +291,11 @@ body {
     color: #5e7565;
     padding-left: 0.3125em;
     margin-right: 1.25em; }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body .page-wrapper .main footer {
+      font-size: small; }
+      body .page-wrapper .main footer a:after {
+        margin-right: 1.25em; } }
   body .page-wrapper aside {
     background: #434343;
     height: 100%; }
@@ -301,3 +306,6 @@ body {
         padding: 0.3125em 0; }
       body .page-wrapper aside .wrapper ul li a {
         font-variant: small-caps; }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      body .page-wrapper aside {
+        font-size: small; } }
