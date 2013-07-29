@@ -236,10 +236,7 @@ body {
     -moz-transform: rotate(-10deg);
     -ms-transform: rotate(-10deg);
     -o-transform: rotate(-10deg);
-    transform: rotate(-10deg);
-    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=-0.83907, M12=-0.54402, M21=0.54402, M22=-0.83907);
-    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=-0.83907, M12=-0.54402, M21=0.54402, M22=-0.83907)";
-    zoom: 1; }
+    transform: rotate(-10deg); }
   body .page-wrapper .main .benefits p {
     font-family: "Voltaire", sans-serif;
     font-size: 200%;
