@@ -127,15 +127,19 @@ body {
     color: #cc8f8f;
     text-decoration: none; }
   body .page-wrapper section header h1 {
-    font-size: 200%;
-    border-bottom: 1px solid; }
+    font-size: 200%; }
   body .page-wrapper section header h2 {
-    font-size: 400%; }
+    font-size: 400%;
+    margin-top: 1.25em; }
   @media only screen and (max-width: 767px) {
     body .page-wrapper section header h1 {
       font-size: 150%; }
     body .page-wrapper section header h2 {
-      font-size: 200%; } }
+      font-size: 200%;
+      margin-top: 0; } }
+  @media only screen and (min-width: 1401px) {
+    body .page-wrapper section header {
+      margin-top: 2.5em; } }
   body .page-wrapper section .summary {
     font-size: 150%; }
     @media only screen and (max-width: 767px) {
@@ -148,10 +152,10 @@ body {
           margin-top: 0.625em;
           display: block; } }
   body .page-wrapper section .preamble {
-    margin-top: 5em;
+    margin: 10em 0 5em;
     background: #333333;
     color: whitesmoke;
-    padding: 31.25em 3.75em 3.75em;
+    padding: 22.5em 3.75em 3.75em;
     font-size: larger; }
     body .page-wrapper section .preamble h3, body .page-wrapper section .preamble p {
       max-width: 700px; }
@@ -159,8 +163,13 @@ body {
       body .page-wrapper section .preamble {
         margin-top: 2.5em;
         padding: 0.625em 1.25em 1.25em; } }
+    @media only screen and (min-width: 1401px) {
+      body .page-wrapper section .preamble {
+        margin: 22.5em 0 11.25em;
+        padding-top: 31.25em; } }
   body .page-wrapper .main .explanation {
-    font-size: large; }
+    font-size: large;
+    background: #4c3636; }
     body .page-wrapper .main .explanation h3 {
       text-align: center;
       position: relative;
@@ -168,15 +177,9 @@ body {
       top: 6.25em;
       margin-left: 6.25em; }
     body .page-wrapper .main .explanation p {
-      background: #4c3636;
       width: 40em;
       height: 30em;
-      -webkit-border-radius: 20em;
-      -moz-border-radius: 20em;
-      -ms-border-radius: 20em;
-      -o-border-radius: 20em;
-      border-radius: 20em;
-      border-bottom: 1px dotted;
+      border-bottom: 1px solid;
       padding-top: 10em;
       letter-spacing: 10px;
       text-align: center;
@@ -206,11 +209,20 @@ body {
       body .page-wrapper .main .explanation p + p {
         letter-spacing: 4px; } }
     @media only screen and (min-width: 768px) {
-      body .page-wrapper .main .explanation p {
-        position: relative;
-        z-index: 2; } }
+      body .page-wrapper .main .explanation {
+        background: none; }
+        body .page-wrapper .main .explanation p {
+          position: relative;
+          z-index: 2;
+          background: #4c3636;
+          -webkit-border-radius: 20em;
+          -moz-border-radius: 20em;
+          -ms-border-radius: 20em;
+          -o-border-radius: 20em;
+          border-radius: 20em; } }
   body .page-wrapper .main .participation {
-    font-size: 150%; }
+    font-size: 150%;
+    margin: 5em 0; }
     body .page-wrapper .main .participation p {
       font-style: italic;
       letter-spacing: 1px;

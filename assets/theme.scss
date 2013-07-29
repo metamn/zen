@@ -56,11 +56,11 @@ body {
       header {
         h1 {
           font-size: 200%;
-          border-bottom: 1px solid;
         }
         
         h2 {
           font-size: 400%;
+          margin-top: $pad;
         }
         
         @include tablet-and-below {
@@ -70,7 +70,12 @@ body {
           
           h2 {
             font-size: 200%;
+            margin-top: 0;
           }
+        }
+        
+        @include big-screen {
+          margin-top: $pad*2;
         }
       }
       
@@ -91,10 +96,10 @@ body {
       }
       
       .preamble {
-        margin-top: $pad*4;
+        margin: $pad*8 0 $pad*4;
         background: darken($background, 1%);
         color: lighten($color, 20%);
-        padding: $pad*25 $pad*3 $pad*3;
+        padding: $pad*18 $pad*3 $pad*3;
         
         font-size: larger;
         
@@ -107,12 +112,18 @@ body {
           padding: $pad/2 $pad $pad;
         }
         
+        @include big-screen {
+          margin: $pad*18 0 $pad*9;
+          padding-top: $pad*25;
+        }
+        
       }
     } 
     
     .main {
       .explanation {
         font-size: large;
+        background: $bordo;
         
         h3 {
           text-align: center;
@@ -125,14 +136,11 @@ body {
         }
         
         p {
-          background: $bordo;
           width: 40em;
           height: 30em;
-          @include border-radius(20em);
-          border-bottom: 1px dotted;
+          border-bottom: 1px solid;
           
           padding-top: 10em;
-          
           
           letter-spacing: 10px;
           text-align: center;
@@ -170,9 +178,13 @@ body {
         }
         
         @include small-screen-and-up {
+          background: none;
+          
           p {
             position: relative;
             z-index: 2;
+            background: $bordo;
+            @include border-radius(20em);
           }
         }
         
@@ -180,6 +192,7 @@ body {
       
       .participation {
         font-size: 150%;
+        margin: $pad*4 0;
         
         p {
           font-style: italic;
