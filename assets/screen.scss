@@ -13,4 +13,6 @@
 @import "pages";
 
 @import "visual-grid";
-#gravity {display: none}
+
+#grid, #gravity { display: none; }
+#grid { margin: 0 $gutter; }

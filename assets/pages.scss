@@ -15,38 +15,60 @@ html {
         @include block;
       }
       
+      @include large-screen-and-up {
+        .intro, .main {
+          max-width: $text-width;
+          margin-left: col(1);
+          margin-right: col(1);
+        }
+        .main {
+          margin-right: col(4);
+        }
+        .sidebar {
+          max-width: $text-width;
+          position: absolute;
+          left: $text-width + col(2) + $gutter*2;
+          top: row(2);
+        }
+      }
+      
+      
       .intro {
         header {
           @include rows(2);
         }
         
         .summary {
-          
+          @include rows(1);
         }
         
         .preamble {
+          @include rows(3);
         }
       }
       
       .main {
         .explanation {
-          
+          @include rows(3); 
         }
         
         .participation {
-          
+          @include rows(4);
         }
         
         .benefits {
-          
+          @include rows(2);
         }
         
         .requirements {
+          @include rows(8);
           
+          p[role=contentinfo] {
+            margin-top: row(1);
+          }
         }
         
         footer {
-          
         }
       }
       

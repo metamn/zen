@@ -49,9 +49,6 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
-h1, h2, h3, p {
-  max-width: 31.25em; }
-
 h1, h2, h3 {
   font-weight: bold; }
 
@@ -69,15 +66,16 @@ h1 {
   border-bottom: 0.625em solid;
   padding-bottom: 0.625em; }
 
-p + p {
-  margin-top: 1.25em; }
-
-p abbr {
-  letter-spacing: 1.5px;
-  font-size: smaller; }
-p a abbr {
-  letter-spacing: normal;
-  font-size: 100%; }
+p {
+  max-width: 31.25em; }
+  p abbr {
+    letter-spacing: 1.5px;
+    font-size: smaller; }
+  p a abbr {
+    letter-spacing: normal;
+    font-size: 100%; }
+  p + p {
+    margin-top: 1.25em; }
 
 html body {
   width: 100%;
@@ -107,8 +105,34 @@ html body {
     html body .page-wrapper .intro, html body .page-wrapper header, html body .page-wrapper .summary, html body .page-wrapper .preamble, html body .page-wrapper .main, html body .page-wrapper .explanation, html body .page-wrapper .participation, html body .page-wrapper .benefits, html body .page-wrapper .requirements, html body .page-wrapper footer, html body .page-wrapper .sidebar, html body .page-wrapper .design-selection, html body .page-wrapper .design-archives, html body .page-wrapper .zen-resources {
       width: 100%;
       float: left; }
+    @media only screen and (min-width: 90.001em) {
+      html body .page-wrapper .intro, html body .page-wrapper .main {
+        max-width: 31.25em;
+        margin-left: 6.45833em;
+        margin-right: 6.45833em; }
+      html body .page-wrapper .main {
+        margin-right: 25.83333em; }
+      html body .page-wrapper .sidebar {
+        max-width: 31.25em;
+        position: absolute;
+        left: 46.66667em;
+        top: 12.5em; } }
     html body .page-wrapper .intro header {
       height: 12.5em; }
+    html body .page-wrapper .intro .summary {
+      height: 6.25em; }
+    html body .page-wrapper .intro .preamble {
+      height: 18.75em; }
+    html body .page-wrapper .main .explanation {
+      height: 18.75em; }
+    html body .page-wrapper .main .participation {
+      height: 25em; }
+    html body .page-wrapper .main .benefits {
+      height: 12.5em; }
+    html body .page-wrapper .main .requirements {
+      height: 50em; }
+      html body .page-wrapper .main .requirements p[role=contentinfo] {
+        margin-top: 6.25em; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle {
   position: fixed;
@@ -167,5 +191,8 @@ html body {
   height: calc(1.25em - 1px);
   width: 100%; }
 
-#gravity {
+#grid, #gravity {
   display: none; }
+
+#grid {
+  margin: 0 1.25em; }

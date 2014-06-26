@@ -44,9 +44,7 @@ $gutter: 1.25em;
 // Typographic elements
 // =======================================================================================================
 
-h1, h2, h3, p {
-  max-width: $text-width;
-}
+
 
 h1, h2, h3 {
   font-weight: bold;
@@ -69,11 +67,10 @@ h1 {
   padding-bottom: $gutter/2;
 }
 
-p + p {
-  margin-top: $gutter;
-}
 
 p {
+  max-width: $text-width;
+  
   abbr {
     letter-spacing: 1.5px;
     font-size: smaller;
@@ -84,5 +81,9 @@ p {
       letter-spacing: normal;
       font-size: 100%;
     }
+  }
+  
+  + p {
+    margin-top: $gutter;
   }
 }
