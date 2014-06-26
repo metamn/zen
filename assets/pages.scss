@@ -6,10 +6,17 @@ html {
     @include color;
     @include link($gutter/8 $gutter/4);
     
+    
+    background-image: url(../assets/background.jpg);
+    background-size: cover;
+    
+    
     .page-wrapper {
       @include block;
       margin: $gutter;
       width: auto;
+      
+      background: $background;
 
       .intro, header, .summary, .preamble, .main, .explanation, .participation, .benefits, .requirements, footer, .sidebar, .design-selection, .design-archives, .zen-resources {
         @include block;
@@ -28,7 +35,6 @@ html {
         position: absolute;
         left: $text-width + col(2) + $gutter*2;
         padding-top: row(2) - $gutter;
-
       }
       
       
@@ -42,7 +48,17 @@ html {
         }
         
         .preamble {
-          @include rows(3);
+          p {
+            &:first-of-type {
+              &:after {
+                content: url(../assets/background.jpg);
+                width: $text-width;
+                display: inline-block;
+                margin-top: $gutter;
+              }
+            }
+          }
+    
         }
       }
       
@@ -73,30 +89,61 @@ html {
       
       .sidebar {
         font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
-  
-        .design-name {
-          font-style: italic;
-        }
-        .designer-name {
-          font-variant: small-caps;
-          letter-spacing: 1px;
-        }
-  
-        li {
-          line-height: 1.5;
-        }
         
         .wrapper {
           .design-selection {
+            ul {
+              li {
+                line-height: 1.5;
+                
+                a {
+                  &.design-name {
+                    font-style: italic;
+                  }
             
+                  &.designer-name {
+                    font-variant: small-caps;
+                    letter-spacing: 1px;
+                  }
+                }
+              }
+        
+              position: relative;
+              &:before {
+                content: "{";
+                font-size: 600%;
+                display: inline-block;
+          
+                position: absolute;
+                left: -$gutter/2;
+                top: -$gutter/2;
+                height: 0;
+              }
+            }
           }
           
           .design-archives {
-            
+            h3 {
+              position: relative;
+        
+              &:before {
+                content: '////';
+                position: absolute;
+                left: -$gutter * 2;
+              }
+            }
           }
           
           .zen-resources {
-           
+            h3 {
+              position: relative;
+        
+              &:before {
+                content: '\2600';
+                position: absolute;
+                left: -$gutter * 2;
+              }
+            }
           }
         }
       }   
