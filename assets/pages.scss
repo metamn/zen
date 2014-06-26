@@ -62,16 +62,29 @@ html {
       }
       
       .main {
-        .explanation {
-          @include rows(3); 
-        }
+        position: relative;
         
-        .participation {
-          @include rows(4);
+        .explanation {
+          width: $text-width * 2;
+          
+          p, h3 {
+            font-size: 150%;
+          }
         }
         
         .benefits {
-          @include rows(2);
+          position: relative;
+          left: $text-width + col(1);
+          height: 0;
+          top: -$text-width + row(2);
+          
+          &:before {
+            content: '';
+            display: inline-block;
+            width: $text-width;
+            height: $text-width;
+            background: $color;
+          }
         }
         
         .requirements {
@@ -89,12 +102,16 @@ html {
       .sidebar {
         font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
         
+        ul {
+          li {
+            line-height: 1.5;
+          }
+        }
+        
         .wrapper {
           .design-selection {
             ul {
               li {
-                line-height: 1.5;
-                
                 a {
                   &.design-name {
                     font-style: italic;

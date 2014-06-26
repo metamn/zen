@@ -131,27 +131,38 @@ html body {
       overflow: hidden;
       display: inline-block;
       margin-top: 1.25em; }
-    html body .page-wrapper .main .explanation {
-      height: 18.75em; }
-    html body .page-wrapper .main .participation {
-      height: 25em; }
-    html body .page-wrapper .main .benefits {
-      height: 12.5em; }
-    html body .page-wrapper .main .requirements {
-      height: 50em; }
-      html body .page-wrapper .main .requirements p[role=contentinfo] {
-        margin-top: 6.25em; }
+    html body .page-wrapper .main {
+      position: relative; }
+      html body .page-wrapper .main .explanation {
+        width: 62.5em; }
+        html body .page-wrapper .main .explanation p, html body .page-wrapper .main .explanation h3 {
+          font-size: 150%; }
+      html body .page-wrapper .main .benefits {
+        position: relative;
+        left: 37.70833em;
+        height: 0;
+        top: -18.75em; }
+        html body .page-wrapper .main .benefits:before {
+          content: '';
+          display: inline-block;
+          width: 31.25em;
+          height: 31.25em;
+          background: #404040; }
+      html body .page-wrapper .main .requirements {
+        height: 50em; }
+        html body .page-wrapper .main .requirements p[role=contentinfo] {
+          margin-top: 6.25em; }
     html body .page-wrapper .sidebar {
       font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif; }
+      html body .page-wrapper .sidebar ul li {
+        line-height: 1.5; }
       html body .page-wrapper .sidebar .wrapper .design-selection ul {
         position: relative; }
-        html body .page-wrapper .sidebar .wrapper .design-selection ul li {
-          line-height: 1.5; }
-          html body .page-wrapper .sidebar .wrapper .design-selection ul li a.design-name {
-            font-style: italic; }
-          html body .page-wrapper .sidebar .wrapper .design-selection ul li a.designer-name {
-            font-variant: small-caps;
-            letter-spacing: 1px; }
+        html body .page-wrapper .sidebar .wrapper .design-selection ul li a.design-name {
+          font-style: italic; }
+        html body .page-wrapper .sidebar .wrapper .design-selection ul li a.designer-name {
+          font-variant: small-caps;
+          letter-spacing: 1px; }
         html body .page-wrapper .sidebar .wrapper .design-selection ul:before {
           content: "{";
           font-size: 600%;
@@ -237,7 +248,7 @@ html body {
   height: calc(1.25em - 1px);
   width: 100%; }
 
-#grid, #gravity {
+#gravity {
   display: none; }
 
 #grid {
