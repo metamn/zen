@@ -1,73 +1,114 @@
-body {
-  .page-wrapper {
-    width: 90%;
-    margin: 0 auto;
-    
-    
-    section, .main {
-      width: $major;
-      float: left;
-    }
-    
-    aside {
-      width: $minor - $margin;
-      float: right;
-      
-      position: fixed;
-      left: $major + $margin;
-      
-      .design-archives, .zen-resources {
-        margin-top: $pad*2;
-        
-        h3 {
-          display: none;
-        }
-      }
-      
-      @include tablet-and-below {
-        margin-bottom: $pad;
-      }
-      @include landscape {
-        margin-bottom: $pad;
-      }
-    }
-    
-    footer {
-      position: fixed;
-      z-index: 2;
-      width: auto;
-      left: 68%;
-      bottom: $pad;
-      padding-bottom: $pad;
-      
-      @include tablet-and-below {
-        margin-left: 0;
-        top: 0;
-      }
-      @include landscape {
-        margin-left: 0;
-        top: 0;
-      }
-    }
-    
-    
-    @include tablet-and-below {
-      section, .main, aside, footer {
-        @include block;
-        
-        position: relative;
-        left: 0;
-      }
-    }
-    
-    @include landscape {
-      section, .main, aside, footer {
-        @include block;
-        
-        position: relative;
-        left: 0;
-      }
-    }
-    
+// Breakpoints
+// =======================================================================================================
+
+$breakpoint-mobile: 30em; // 480px
+$breakpoint-tablet: 48em; // 768px
+$breakpoint-large-screen: 90em; // 1440px
+
+
+@mixin mobile {
+  @media only screen and (max-width: $breakpoint-mobile) {
+    @content
   }
 }
+
+@mixin below-tablet {
+  @media only screen and (max-width: $breakpoint-tablet - 0.001) {
+    @content
+  }
+}
+
+@mixin large-screen-and-up {
+  @media only screen and (min-width: $breakpoint-large-screen + 0.001) {
+    @content
+  }
+}
+
+
+
+
+
+// Setting up the typographic and the usual grid
+// =======================================================================================================
+// - we will have a grid for text elements like blog posts, excerpts
+// - we will have a grid for non-text elements
+// - global variables set up are: $text-grid-width, $text-grid-height, $grid-width, $grid-height;
+
+// $gutter is defined in the typographic settings based on $line-height
+// we will redefine here because is always has the 1.25em value
+$gutter: 1.25em;
+
+
+// Setting up the text block
+// -----------------------------------------------
+// Characters per row
+$characters-per-row: 50;
+
+// Text block width
+$text-block-width: $characters-per-row * $gutter/2; 
+$text-grid-width: $text-block-width;
+$text-width: $text-grid-width;
+
+// How many lines are in a txt-block
+$lines-in-text-block: 4;
+
+// Text block height
+$text-block-height: $lines-in-text-block * $gutter;
+$text-grid-height: $text-block-height;
+$text-height: $text-grid-height;
+
+
+
+// Setting up the grid
+// -----------------------------------------------
+// Number of grid cells in a text block
+$cells-in-a-text-block: 6;
+
+// Grid cell width
+$grid-cell-width: $text-block-width / $cells-in-a-text-block;
+$grid-width: $grid-cell-width;
+
+// Grid cell height
+$grid-cell-height: $text-block-height;
+$grid-height: $grid-cell-height;
+
+
+
+
+// Grid functions
+// =======================================================================================================
+
+
+@mixin rows($nr) {
+  height: row($nr);
+}
+
+@mixin cols($nr) {
+  width: col($nr);
+}
+
+
+@function row($nr) {
+  @return $nr * ($text-grid-height + $gutter);
+}
+
+@function col($nr) {
+  @return $nr * ($grid-width + $gutter);
+}
+
+
+
+
+
+
+// General mixins
+// =======================================================================================================
+
+
+
+@mixin block {
+  width: 100%;
+  float: left;
+}
+
+

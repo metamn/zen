@@ -46,263 +46,71 @@ q, blockquote {
 a img {
   border: none; }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
-/* Vertical rhythm
-*/
-/* The Grid
-*/
-/* Responsive mixins
-  - http://paulstamatiou.com/responsive-retina-blog-development-part-1
-*/
-body {
+h1, h2, h3 {
+  font-weight: bold; }
+
+h3 {
+  margin-top: 1.25em; }
+
+h2 {
+  margin-top: 2.5em;
+  margin-bottom: 1.25em;
+  border-bottom: 1px solid; }
+
+h1 {
+  margin-top: 3.75em;
+  margin-bottom: 2.5em;
+  border-bottom: 0.625em solid;
+  padding-bottom: 0.625em; }
+
+p + p {
+  margin-top: 1.25em; }
+
+html body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
-  line-height: 1.25em; }
-  body .page-wrapper {
-    font-family: 'Lato', sans-serif;
-    font-weight: 300; }
-    body .page-wrapper h1, body .page-wrapper h2, body .page-wrapper h3, body .page-wrapper p {
-      line-height: 1.25em; }
-    body .page-wrapper h1, body .page-wrapper h2, body .page-wrapper h3 {
-      font-size: 1.33333em;
-      padding: 1.25em 0;
-      margin: 0; }
-    body .page-wrapper p + p {
-      margin-top: 1.25em; }
-
-body .page-wrapper {
-  width: 90%;
-  margin: 0 auto; }
-  body .page-wrapper section, body .page-wrapper .main {
-    width: 61.804%;
-    float: left; }
-  body .page-wrapper aside {
-    width: 33.196%;
-    float: right;
-    position: fixed;
-    left: 66.804%; }
-    body .page-wrapper aside .design-archives, body .page-wrapper aside .zen-resources {
-      margin-top: 2.5em; }
-      body .page-wrapper aside .design-archives h3, body .page-wrapper aside .zen-resources h3 {
-        display: none; }
-    @media only screen and (max-width: 767px) {
-      body .page-wrapper aside {
-        margin-bottom: 1.25em; } }
-    @media only screen and (orientation: landscape) and (max-width: 1023px) {
-      body .page-wrapper aside {
-        margin-bottom: 1.25em; } }
-  body .page-wrapper footer {
-    position: fixed;
-    z-index: 2;
-    width: auto;
-    left: 68%;
-    bottom: 1.25em;
-    padding-bottom: 1.25em; }
-    @media only screen and (max-width: 767px) {
-      body .page-wrapper footer {
-        margin-left: 0;
-        top: 0; } }
-    @media only screen and (orientation: landscape) and (max-width: 1023px) {
-      body .page-wrapper footer {
-        margin-left: 0;
-        top: 0; } }
-  @media only screen and (max-width: 767px) {
-    body .page-wrapper section, body .page-wrapper .main, body .page-wrapper aside, body .page-wrapper footer {
-      width: 100%;
-      float: left;
-      position: relative;
-      left: 0; } }
-  @media only screen and (orientation: landscape) and (max-width: 1023px) {
-    body .page-wrapper section, body .page-wrapper .main, body .page-wrapper aside, body .page-wrapper footer {
-      width: 100%;
-      float: left;
-      position: relative;
-      left: 0; } }
-
-body {
-  background: #363636;
-  color: #c2c2c2; }
-  body a, body a:visited, body a:active {
-    color: #cc8f8f;
-    text-decoration: none; }
-  body .page-wrapper section header h1 {
-    font-size: 200%; }
-  body .page-wrapper section header h2 {
-    font-size: 400%;
-    margin-top: 1.25em; }
-  @media only screen and (max-width: 767px) {
-    body .page-wrapper section header h1 {
-      font-size: 150%; }
-    body .page-wrapper section header h2 {
-      font-size: 200%;
-      margin-top: 0; } }
-  @media only screen and (min-width: 1401px) {
-    body .page-wrapper section header {
-      margin-top: 2.5em; } }
-  body .page-wrapper section .summary {
-    font-size: 150%; }
-    @media only screen and (max-width: 767px) {
-      body .page-wrapper section .summary {
-        font-size: 100%; }
-        body .page-wrapper section .summary p:nth-child(1):after {
-          content: '(The list can be found at the bottom of the page.)';
-          font-size: small;
-          font-style: italic;
-          margin-top: 0.625em;
-          display: block; } }
-  body .page-wrapper section .preamble {
-    margin: 10em 0 5em;
-    background: #333333;
-    color: whitesmoke;
-    padding: 22.5em 3.75em 3.75em;
-    font-size: larger; }
-    body .page-wrapper section .preamble h3, body .page-wrapper section .preamble p {
-      max-width: 700px; }
-    @media only screen and (max-width: 767px) {
-      body .page-wrapper section .preamble {
-        margin-top: 2.5em;
-        padding: 0.625em 1.25em 1.25em; } }
-    @media only screen and (min-width: 1401px) {
-      body .page-wrapper section .preamble {
-        margin: 22.5em 0 11.25em;
-        padding-top: 31.25em; } }
-  body .page-wrapper .main .explanation {
-    font-size: large; }
-    body .page-wrapper .main .explanation h3 {
-      text-align: center;
-      position: relative;
-      z-index: 3;
-      top: 6.25em;
-      margin-left: 6.25em; }
-    body .page-wrapper .main .explanation p {
-      width: 40em;
-      height: 30em;
-      border-bottom: 1px solid;
-      padding-top: 10em;
-      letter-spacing: 8px;
-      text-align: center;
-      line-height: 2; }
-    body .page-wrapper .main .explanation p + p {
-      letter-spacing: 6px;
-      border-bottom: none;
-      background: #c2c2c2;
-      color: #363636; }
-    @media only screen and (max-width: 767px) {
-      body .page-wrapper .main .explanation h3 {
-        top: 0;
-        margin-left: 0; }
-      body .page-wrapper .main .explanation p {
-        width: auto;
-        height: auto;
-        -webkit-border-radius: 1em;
-        -moz-border-radius: 1em;
-        -ms-border-radius: 1em;
-        -o-border-radius: 1em;
-        border-radius: 1em;
-        padding: 2.5em 1.25em;
-        letter-spacing: 7px; }
-      body .page-wrapper .main .explanation p + p {
-        letter-spacing: 4px; } }
-    @media only screen and (min-width: 768px) and (max-width: 1024px) {
-      body .page-wrapper .main .explanation p {
-        width: auto;
-        height: auto;
-        padding-bottom: 7.5em; }
-      body .page-wrapper .main .explanation p + p {
-        padding-top: 7.5em; } }
-  body .page-wrapper .main .participation {
-    font-size: 150%;
-    margin: 5em 0; }
-    body .page-wrapper .main .participation p {
-      font-style: italic;
-      letter-spacing: 1px;
-      font-size: 90%;
-      border-left: 8em solid #292929;
-      padding-left: 1.25em; }
-    body .page-wrapper .main .participation p + p {
-      margin-top: 3.125em; }
-    @media only screen and (max-width: 380px) {
-      body .page-wrapper .main .participation {
-        font-size: 100%; }
-        body .page-wrapper .main .participation p {
-          font-style: normal; } }
-  body .page-wrapper .main .benefits h3 {
-    font-family: "Nothing You Could Do", cursive;
-    font-size: 600%;
-    color: #e394bb;
-    text-decoration: underline;
-    -webkit-transform: rotate(-10deg);
-    -moz-transform: rotate(-10deg);
-    -ms-transform: rotate(-10deg);
-    -o-transform: rotate(-10deg);
-    transform: rotate(-10deg); }
-  body .page-wrapper .main .benefits p {
-    font-family: "Voltaire", sans-serif;
-    font-size: 200%;
-    padding: 0 2.5em 1.25em;
-    color: #d9a38d; }
-  @media only screen and (max-width: 380px) {
-    body .page-wrapper .main .benefits h3 {
-      font-size: 300%; }
-    body .page-wrapper .main .benefits p {
-      font-size: 120%;
-      padding: 0 1.25em 1.25em; } }
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    body .page-wrapper .main .benefits h3 {
-      font-size: 400%; }
-    body .page-wrapper .main .benefits p {
-      font-size: 150%; } }
-  @media only screen and (orientation: landscape) and (max-width: 1023px) {
-    body .page-wrapper .main .benefits h3 {
-      font-size: 400%; }
-    body .page-wrapper .main .benefits p {
-      font-size: 150%; } }
-  body .page-wrapper .main .requirements {
-    font-size: large; }
-    body .page-wrapper .main .requirements h3, body .page-wrapper .main .requirements p:first-line {
-      font-variant: small-caps;
-      font-weight: bold; }
-    body .page-wrapper .main .requirements p {
-      width: 45%;
-      margin-right: 10%;
-      float: left;
-      padding-bottom: 2.5em; }
-    body .page-wrapper .main .requirements p:nth-child(odd) {
-      margin-right: 0;
-      margin-top: 0; }
-    body .page-wrapper .main .requirements p:nth-child(6) {
-      width: 100%;
-      float: left;
-      margin-top: 1.25em; }
-    body .page-wrapper .main .requirements p + p {
-      margin-top: 0; }
-    @media only screen and (max-width: 380px) {
-      body .page-wrapper .main .requirements p {
-        width: 100%;
-        float: left;
-        margin-right: 0; } }
-  body .page-wrapper .main footer a:after {
-    content: '\2713';
-    font-size: larger;
-    color: #5e7565;
-    padding-left: 0.3125em;
-    margin-right: 1.25em; }
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    body .page-wrapper .main footer {
-      font-size: small; }
-      body .page-wrapper .main footer a:after {
-        margin-right: 1.25em; } }
-  body .page-wrapper aside {
-    background: #434343;
-    height: 100%; }
-    body .page-wrapper aside .wrapper {
-      padding: 1.25em; }
-      body .page-wrapper aside .wrapper ul li {
-        border-bottom: 1px dotted #363636;
-        padding: 0.3125em 0; }
-      body .page-wrapper aside .wrapper ul li a {
-        font-variant: small-caps; }
-    @media only screen and (min-width: 768px) and (max-width: 1024px) {
-      body .page-wrapper aside {
-        font-size: small; } }
+  line-height: 1.25;
+  color: #404040;
+  background: white; }
+  @media only screen and (max-width: 47.999em) {
+    html body {
+      font-size: 87.5%; } }
+  @media only screen and (min-width: 90.001em) {
+    html body {
+      font-size: 125%; } }
+  html body a {
+    color: #7f7f7f;
+    text-decoration: none;
+    border-bottom: 1px solid; }
+    html body a:hover {
+      color: #404040; }
+  html body .page-wrapper {
+    width: 100%;
+    float: left;
+    margin: 1.25em;
+    width: calc(100% - 2.5em); }
+    html body .page-wrapper .intro header {
+      max-width: 31.25em; }
+    html body .page-wrapper .intro .summary {
+      max-width: 31.25em; }
+    html body .page-wrapper .intro .preamble {
+      max-width: 31.25em; }
+    html body .page-wrapper .main .explanation {
+      max-width: 31.25em; }
+    html body .page-wrapper .main .participation {
+      max-width: 31.25em; }
+    html body .page-wrapper .main .benefits {
+      max-width: 31.25em; }
+    html body .page-wrapper .main .requirements {
+      max-width: 31.25em; }
+    html body .page-wrapper .main footer {
+      max-width: 31.25em; }
+    html body .page-wrapper .sidebar .wrapper .design-selection {
+      max-width: 31.25em; }
+    html body .page-wrapper .sidebar .wrapper .design-archives {
+      max-width: 31.25em; }
+    html body .page-wrapper .sidebar .wrapper .zen-resources {
+      max-width: 31.25em; }

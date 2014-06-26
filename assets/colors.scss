@@ -1,0 +1,43 @@
+// check color contrast with: http://www.snook.ca/technical/colour_contrast/colour.html
+
+$background: #fff;
+$color: #404040;
+$beauty: #FFB2B2;
+
+// coming from $color, to be used on $background
+$dark-grey: #7f7f7f;
+
+
+// verified combinations (background, color)
+// - $background, $color
+// - $color, $background
+// - $beauty, $color
+// - background, $dark-grey
+
+
+// failing combinations
+// - $background, $beauty
+// - $beauty, $background
+
+
+@mixin color($c: $color, $b: $background, $padding: false) {
+  color: $c;
+  background: $b;
+  
+  @if ($padding != false) {
+    padding: $padding;
+  }
+}
+
+
+@mixin link($padding) {
+  a {
+    color: $dark-grey;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    
+    &:hover {
+      color: $color;  
+    }
+  }
+}
