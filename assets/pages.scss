@@ -1,5 +1,7 @@
 html {
   body {
+    @include block;
+    
     @include typographic-grid;
     @include color;
     @include link($gutter/8 $gutter/4);
@@ -7,56 +9,59 @@ html {
     .page-wrapper {
       @include block;
       margin: $gutter;
-      width: calc(100% - #{$gutter*2});
+      width: auto;
+
+      .intro, header, .summary, .preamble, .main, .explanation, .participation, .benefits, .requirements, footer, .sidebar, .design-selection, .design-archives, .zen-resources {
+        @include block;
+      }
       
       .intro {
         header {
-          max-width: $text-width;
+          @include rows(2);
         }
         
         .summary {
-          max-width: $text-width;
+          
         }
         
         .preamble {
-          max-width: $text-width;
         }
       }
       
       .main {
         .explanation {
-          max-width: $text-width;
+          
         }
         
         .participation {
-          max-width: $text-width;
+          
         }
         
         .benefits {
-          max-width: $text-width;
+          
         }
         
         .requirements {
-          max-width: $text-width;
+          
         }
         
         footer {
-          max-width: $text-width;
+          
         }
       }
       
       .sidebar {
         .wrapper {
           .design-selection {
-            max-width: $text-width;
+            
           }
           
           .design-archives {
-            max-width: $text-width;
+            
           }
           
           .zen-resources {
-            max-width: $text-width;
+           
           }
         }
       }   
