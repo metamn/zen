@@ -105,18 +105,17 @@ html body {
     html body .page-wrapper .intro, html body .page-wrapper header, html body .page-wrapper .summary, html body .page-wrapper .preamble, html body .page-wrapper .main, html body .page-wrapper .explanation, html body .page-wrapper .participation, html body .page-wrapper .benefits, html body .page-wrapper .requirements, html body .page-wrapper footer, html body .page-wrapper .sidebar, html body .page-wrapper .design-selection, html body .page-wrapper .design-archives, html body .page-wrapper .zen-resources {
       width: 100%;
       float: left; }
-    @media only screen and (min-width: 90.001em) {
-      html body .page-wrapper .intro, html body .page-wrapper .main {
-        max-width: 31.25em;
-        margin-left: 6.45833em;
-        margin-right: 6.45833em; }
-      html body .page-wrapper .main {
-        margin-right: 25.83333em; }
-      html body .page-wrapper .sidebar {
-        max-width: 31.25em;
-        position: absolute;
-        left: 46.66667em;
-        top: 12.5em; } }
+    html body .page-wrapper .intro, html body .page-wrapper .main {
+      max-width: 31.25em;
+      margin-left: 6.45833em;
+      margin-right: 6.45833em; }
+    html body .page-wrapper .main {
+      margin-right: 25.83333em; }
+    html body .page-wrapper .sidebar {
+      max-width: 31.25em;
+      position: absolute;
+      left: 46.66667em;
+      padding-top: 11.25em; }
     html body .page-wrapper .intro header {
       height: 12.5em; }
     html body .page-wrapper .intro .summary {
@@ -133,6 +132,15 @@ html body {
       height: 50em; }
       html body .page-wrapper .main .requirements p[role=contentinfo] {
         margin-top: 6.25em; }
+    html body .page-wrapper .sidebar {
+      font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif; }
+      html body .page-wrapper .sidebar .design-name {
+        font-style: italic; }
+      html body .page-wrapper .sidebar .designer-name {
+        font-variant: small-caps;
+        letter-spacing: 1px; }
+      html body .page-wrapper .sidebar li {
+        line-height: 1.5; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle {
   position: fixed;

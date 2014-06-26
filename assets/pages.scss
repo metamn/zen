@@ -15,21 +15,20 @@ html {
         @include block;
       }
       
-      @include large-screen-and-up {
-        .intro, .main {
-          max-width: $text-width;
-          margin-left: col(1);
-          margin-right: col(1);
-        }
-        .main {
-          margin-right: col(4);
-        }
-        .sidebar {
-          max-width: $text-width;
-          position: absolute;
-          left: $text-width + col(2) + $gutter*2;
-          top: row(2);
-        }
+      .intro, .main {
+        max-width: $text-width;
+        margin-left: col(1);
+        margin-right: col(1);
+      }
+      .main {
+        margin-right: col(4);
+      }
+      .sidebar {
+        max-width: $text-width;
+        position: absolute;
+        left: $text-width + col(2) + $gutter*2;
+        padding-top: row(2) - $gutter;
+
       }
       
       
@@ -73,6 +72,20 @@ html {
       }
       
       .sidebar {
+        font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+  
+        .design-name {
+          font-style: italic;
+        }
+        .designer-name {
+          font-variant: small-caps;
+          letter-spacing: 1px;
+        }
+  
+        li {
+          line-height: 1.5;
+        }
+        
         .wrapper {
           .design-selection {
             
