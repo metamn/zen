@@ -53,18 +53,22 @@ h1, h2, h3 {
   font-weight: bold; }
 
 h3 {
-  margin-top: 1.25em; }
-
-h2 {
   margin-top: 2.5em;
   margin-bottom: 1.25em;
   border-bottom: 1px solid; }
 
-h1 {
+h2 {
   margin-top: 3.75em;
   margin-bottom: 2.5em;
   border-bottom: 0.625em solid;
   padding-bottom: 0.625em; }
+
+h1 {
+  margin-top: 3.75em;
+  margin-bottom: 2.5em;
+  color: white;
+  background: #404040;
+  padding: 0.3125em; }
 
 p {
   max-width: 31.25em; }
@@ -83,10 +87,7 @@ html body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.25;
-  color: #404040;
-  background: white;
-  background-image: url(../assets/background.jpg);
-  background-size: cover; }
+  background: #404040; }
   @media only screen and (max-width: 47.999em) {
     html body {
       font-size: 87.5%; } }
@@ -104,6 +105,7 @@ html body {
     float: left;
     margin: 1.25em;
     width: auto;
+    color: #404040;
     background: white; }
     html body .page-wrapper .intro, html body .page-wrapper header, html body .page-wrapper .summary, html body .page-wrapper .preamble, html body .page-wrapper .main, html body .page-wrapper .explanation, html body .page-wrapper .participation, html body .page-wrapper .benefits, html body .page-wrapper .requirements, html body .page-wrapper footer, html body .page-wrapper .sidebar, html body .page-wrapper .design-selection, html body .page-wrapper .design-archives, html body .page-wrapper .zen-resources {
       width: 100%;
@@ -118,14 +120,15 @@ html body {
       max-width: 31.25em;
       position: absolute;
       left: 46.66667em;
-      padding-top: 11.25em; }
+      padding-top: 8.125em; }
     html body .page-wrapper .intro header {
       height: 12.5em; }
     html body .page-wrapper .intro .summary {
       height: 6.25em; }
     html body .page-wrapper .intro .preamble p:first-of-type:after {
       content: url(../assets/background.jpg);
-      width: 31.25em;
+      max-width: 31.25em;
+      overflow: hidden;
       display: inline-block;
       margin-top: 1.25em; }
     html body .page-wrapper .main .explanation {
@@ -154,21 +157,28 @@ html body {
           font-size: 600%;
           display: inline-block;
           position: absolute;
-          left: -0.625em;
+          left: -0.78125em;
           top: -0.625em;
-          height: 0; }
+          height: 0;
+          color: #ffb2b2; }
       html body .page-wrapper .sidebar .wrapper .design-archives h3 {
         position: relative; }
         html body .page-wrapper .sidebar .wrapper .design-archives h3:before {
           content: '////';
           position: absolute;
-          left: -2.5em; }
+          left: -2.5em;
+          top: -0.15625em;
+          color: #ffb2b2;
+          font-size: 150%; }
       html body .page-wrapper .sidebar .wrapper .zen-resources h3 {
         position: relative; }
         html body .page-wrapper .sidebar .wrapper .zen-resources h3:before {
           content: '\2600';
           position: absolute;
-          left: -2.5em; }
+          left: -2.5em;
+          top: -0.15625em;
+          color: #ffb2b2;
+          font-size: 150%; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle {
   position: fixed;

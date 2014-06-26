@@ -1,12 +1,16 @@
 /*
-Syntax error: Undefined variable: "$text-width".
-        on line 72 of /home/cs/work/zen/assets/typography.scss
+Syntax error: Undefined mixin 'color'.
+        on line 69 of /home/cs/work/zen/assets/typography.scss, in `color'
+        from line 69 of /home/cs/work/zen/assets/typography.scss
 
 Backtrace:
-/home/cs/work/zen/assets/typography.scss:72
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/script/tree/variable.rb:49:in `_perform'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/script/tree/node.rb:50:in `perform'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:366:in `visit_prop'
+/home/cs/work/zen/assets/typography.scss:69:in `color'
+/home/cs/work/zen/assets/typography.scss:69
+/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:320:in `block in visit_mixin'
+/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:98:in `block in with_mixin'
+/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:98:in `with_mixin'
+/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:318:in `visit_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/base.rb:36:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
 /var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:79:in `block in with_base'
@@ -69,4 +73,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$text-width\".\A         on line 72 of /home/cs/work/zen/assets/typography.scss"; }
+  content: "Syntax error: Undefined mixin 'color'.\A         on line 69 of /home/cs/work/zen/assets/typography.scss, in `color'\A         from line 69 of /home/cs/work/zen/assets/typography.scss"; }

@@ -3,12 +3,10 @@ html {
     @include block;
     
     @include typographic-grid;
-    @include color;
     @include link($gutter/8 $gutter/4);
     
     
-    background-image: url(../assets/background.jpg);
-    background-size: cover;
+    background: $color;
     
     
     .page-wrapper {
@@ -16,7 +14,7 @@ html {
       margin: $gutter;
       width: auto;
       
-      background: $background;
+      @include color;
 
       .intro, header, .summary, .preamble, .main, .explanation, .participation, .benefits, .requirements, footer, .sidebar, .design-selection, .design-archives, .zen-resources {
         @include block;
@@ -34,7 +32,7 @@ html {
         max-width: $text-width;
         position: absolute;
         left: $text-width + col(2) + $gutter*2;
-        padding-top: row(2) - $gutter;
+        padding-top: row(2) - $gutter * 3 - $gutter/2;
       }
       
       
@@ -52,7 +50,8 @@ html {
             &:first-of-type {
               &:after {
                 content: url(../assets/background.jpg);
-                width: $text-width;
+                max-width: $text-width;
+                overflow: hidden;
                 display: inline-block;
                 margin-top: $gutter;
               }
@@ -115,9 +114,11 @@ html {
                 display: inline-block;
           
                 position: absolute;
-                left: -$gutter/2;
+                left: -$gutter/2 - $gutter/8;
                 top: -$gutter/2;
                 height: 0;
+                
+                color: $beauty;
               }
             }
           }
@@ -130,6 +131,9 @@ html {
                 content: '////';
                 position: absolute;
                 left: -$gutter * 2;
+                top: -$gutter/8;
+                color: $beauty;
+                font-size: 150%;
               }
             }
           }
@@ -142,6 +146,9 @@ html {
                 content: '\2600';
                 position: absolute;
                 left: -$gutter * 2;
+                top: -$gutter/8;
+                color: $beauty;
+                font-size: 150%;
               }
             }
           }
