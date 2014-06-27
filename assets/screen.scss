@@ -14,5 +14,5 @@
 
 @import "visual-grid";
 
+#grid { margin: 0 $gutter; z-index: 100; }
 #gravity { display: none; }
-#grid { margin: 0 $gutter; }

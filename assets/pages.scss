@@ -32,13 +32,13 @@ html {
         max-width: $text-width;
         position: absolute;
         left: $text-width + col(2) + $gutter*2;
-        padding-top: row(2) - $gutter * 3 - $gutter/2;
+        padding-top: row(1);
       }
       
       
       .intro {
         header {
-          @include rows(2);
+          
         }
         
         .summary {
@@ -51,6 +51,7 @@ html {
               &:after {
                 content: url(../assets/background.jpg);
                 max-width: $text-width;
+                max-height: row(3);
                 overflow: hidden;
                 display: inline-block;
                 margin-top: $gutter;
@@ -66,7 +67,6 @@ html {
         
         .explanation {
           width: $text-width * 2;
-          
           p, h3 {
             font-size: 150%;
           }
@@ -76,7 +76,7 @@ html {
           position: relative;
           left: $text-width + col(1);
           height: 0;
-          top: -$text-width + row(2);
+          top: -$text-width + row(1);
           
           &:before {
             content: '';
@@ -123,7 +123,7 @@ html {
                   }
                 }
               }
-        
+              
               position: relative;
               &:before {
                 content: "{";
@@ -131,9 +131,8 @@ html {
                 display: inline-block;
           
                 position: absolute;
-                left: -$gutter/2 - $gutter/8;
-                top: -$gutter/2;
-                height: 0;
+                top: $gutter/2 + $gutter/8;
+                left: -$gutter/2;
                 
                 color: $beauty;
               }
@@ -147,7 +146,7 @@ html {
               &:before {
                 content: '////';
                 position: absolute;
-                left: -$gutter * 2;
+                left: -$gutter*2 + $gutter/4;
                 top: -$gutter/8;
                 color: $beauty;
                 font-size: 150%;
@@ -162,7 +161,7 @@ html {
               &:before {
                 content: '\2600';
                 position: absolute;
-                left: -$gutter * 2;
+                left: -$gutter*2 + $gutter/2;
                 top: -$gutter/8;
                 color: $beauty;
                 font-size: 150%;
