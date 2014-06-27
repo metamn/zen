@@ -74,7 +74,7 @@ html {
         
         .benefits {
           position: relative;
-          left: $text-width + col(1);
+          left: $text-width + col(1) + $gutter;
           height: 0;
           top: -$text-width + row(1);
           
