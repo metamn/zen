@@ -80,8 +80,10 @@ html {
           
           // rotate
           @include transform(rotate(45deg));
+          @include animation(rotate-border 15s infinite);
           h3, p {
             @include transform(rotate(-45deg));
+            @include animation(rotate-text 15s infinite);
             
             // adjust postion
             position: relative;
@@ -103,7 +105,6 @@ html {
             top: -$gutter;
             left: -$gutter;
           }
-
         }
         
         .requirements {
