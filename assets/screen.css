@@ -160,18 +160,38 @@ html body {
       html body .page-wrapper .main .benefits {
         position: relative;
         left: 38.95833em;
-        height: 0; }
+        height: 12.5em;
+        top: -12.5em;
+        color: white;
+        background: #404040;
+        text-align: center;
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        padding: 10em 0; }
+        html body .page-wrapper .main .benefits p {
+          text-align: center; }
+        html body .page-wrapper .main .benefits h3, html body .page-wrapper .main .benefits p {
+          -moz-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
         html body .page-wrapper .main .benefits:before, html body .page-wrapper .main .benefits:after {
           content: '';
           height: 25em;
-          border-left: 1px solid;
+          border-left: 1px solid #404040;
           display: inline-block;
           position: absolute;
           left: 14.375em;
-          top: -22.5em; }
+          top: -23.75em; }
         html body .page-wrapper .main .benefits:after {
-          top: 13.75em; }
+          top: 31.25em; }
       html body .page-wrapper .main .requirements {
+        position: relative;
+        top: -33.75em;
         height: 50em; }
         html body .page-wrapper .main .requirements p[role=contentinfo] {
           margin-top: 6.25em; }

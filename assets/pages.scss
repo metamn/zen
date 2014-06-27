@@ -70,23 +70,38 @@ html {
         .benefits {
           position: relative;
           left: $text-width + col(1) + $gutter;
-          height: 0;
+          height: row(2);
+          top: row(-2);
+          
+          @include color($background, $color);
+          p {
+            text-align: center;
+          }
+          text-align: center;
+          @include transform(rotate(45deg));
+          padding: $gutter*8 0;
+          
+          h3, p {
+            @include transform(rotate(-45deg));
+          }
           
           &:before, &:after {
             content: '';
             height: row(4);
-            border-left: 1px solid;
+            border-left: 1px solid $color;
             display: inline-block;
             position: absolute;
             left: $text-width/2 - $gutter;
-            top: row(-4) + $gutter*2;
+            top: row(-4) + $gutter;
           }
           &:after {
-            top: row(2) + $gutter;
+            top: row(5);
           }
         }
         
         .requirements {
+          position: relative;
+          top: row(-5) - $gutter*2;
           @include rows(8);
           
           p[role=contentinfo] {
