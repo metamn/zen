@@ -49,6 +49,24 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
+@-moz-keyframes move {
+  from {
+    background-position: 0% 0%; }
+
+  to {
+    background-position: 100% 100%; } }
+@-webkit-keyframes move {
+  from {
+    background-position: 0% 0%; }
+
+  to {
+    background-position: 100% 100%; } }
+@keyframes move {
+  from {
+    background-position: 0% 0%; }
+
+  to {
+    background-position: 100% 100%; } }
 h1, h2, h3 {
   width: 100%;
   float: left;
@@ -123,11 +141,25 @@ html body {
       max-width: 31.25em;
       position: absolute;
       left: 46.66667em;
-      padding-top: 6.25em; }
+      padding: 6.25em 0;
+      border-left: 1px solid #e5e5e5; }
+      html body .page-wrapper .sidebar h3, html body .page-wrapper .sidebar ul li {
+        padding-left: 1.25em;
+        width: calc(100% - 1.25em); }
+      html body .page-wrapper .sidebar h3 {
+        color: #7f7f7f;
+        margin-bottom: 0.625em;
+        border-color: #e5e5e5; }
+      html body .page-wrapper .sidebar li {
+        border-bottom: 1px solid #e5e5e5;
+        padding-bottom: 0.625em;
+        margin-bottom: 0.625em; }
+        html body .page-wrapper .sidebar li a {
+          border-bottom: 0; }
     html body .page-wrapper .intro .summary {
       height: 6.25em; }
     html body .page-wrapper .intro .preamble p:first-of-type:after {
-      content: url(../assets/background.jpg);
+      content: url(../assets/isometropolis.png);
       max-width: 31.25em;
       max-height: 18.75em;
       overflow: hidden;
@@ -142,55 +174,18 @@ html body {
       html body .page-wrapper .main .benefits {
         position: relative;
         left: 38.95833em;
-        height: 0;
-        top: -25em; }
-        html body .page-wrapper .main .benefits:before {
-          content: '';
-          display: inline-block;
-          width: 31.25em;
-          height: 31.25em;
-          background: #404040; }
+        height: 0; }
       html body .page-wrapper .main .requirements {
         height: 50em; }
         html body .page-wrapper .main .requirements p[role=contentinfo] {
           margin-top: 6.25em; }
     html body .page-wrapper .sidebar {
       font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif; }
-      html body .page-wrapper .sidebar ul li {
-        line-height: 1.5; }
-      html body .page-wrapper .sidebar .wrapper .design-selection ul {
-        position: relative; }
-        html body .page-wrapper .sidebar .wrapper .design-selection ul li a.design-name {
-          font-style: italic; }
-        html body .page-wrapper .sidebar .wrapper .design-selection ul li a.designer-name {
-          font-variant: small-caps;
-          letter-spacing: 1px; }
-        html body .page-wrapper .sidebar .wrapper .design-selection ul:before {
-          content: "{";
-          font-size: 600%;
-          display: inline-block;
-          position: absolute;
-          top: 0.78125em;
-          left: -0.625em;
-          color: #ffb2b2; }
-      html body .page-wrapper .sidebar .wrapper .design-archives h3 {
-        position: relative; }
-        html body .page-wrapper .sidebar .wrapper .design-archives h3:before {
-          content: '////';
-          position: absolute;
-          left: -2.1875em;
-          top: -0.15625em;
-          color: #ffb2b2;
-          font-size: 150%; }
-      html body .page-wrapper .sidebar .wrapper .zen-resources h3 {
-        position: relative; }
-        html body .page-wrapper .sidebar .wrapper .zen-resources h3:before {
-          content: '\2600';
-          position: absolute;
-          left: -1.875em;
-          top: -0.15625em;
-          color: #ffb2b2;
-          font-size: 150%; }
+      html body .page-wrapper .sidebar .wrapper .design-selection ul li a.design-name {
+        font-style: italic; }
+      html body .page-wrapper .sidebar .wrapper .design-selection ul li a.designer-name {
+        font-variant: small-caps;
+        letter-spacing: 1px; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle {
   position: fixed;
@@ -253,5 +248,5 @@ html body {
   margin: 0 1.25em;
   z-index: 100; }
 
-#gravity {
+#grid, #gravity {
   display: none; }

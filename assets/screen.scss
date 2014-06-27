@@ -5,8 +5,10 @@
 
 @import "compass/reset";
 @import "compass/css3";
+@import "compass/css3/deprecated-support";
 
 @import "colors";
+@import "animations";
 @import "layout";
 @import "typography";
 @import "structures";
@@ -15,4 +17,4 @@
 @import "visual-grid";
 
 #grid { margin: 0 $gutter; z-index: 100; }
-#gravity { display: none; }
+#grid, #gravity { display: none; }
