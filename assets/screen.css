@@ -185,12 +185,12 @@ html body {
         html body .page-wrapper .main .benefits:after {
           content: '';
           display: inline-block;
-          border: 1px solid #ffb2b2;
+          border: 0.625em dotted #404040;
           position: absolute;
           height: calc(31.25em - 1.25em);
           width: calc(31.25em - 1.25em);
-          top: -0.625em;
-          left: -0.625em; }
+          top: -1.25em;
+          left: -1.25em; }
       html body .page-wrapper .main .requirements {
         position: relative;
         top: -31.25em; }

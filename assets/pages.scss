@@ -96,12 +96,12 @@ html {
           &:after {
             content: '';
             display: inline-block;
-            border: 1px solid $beauty;
+            border: $gutter/2 dotted $color;
             position: absolute;
             height: calc(#{$text-width} - #{$gutter});
             width: calc(#{$text-width} - #{$gutter});
-            top: -$gutter/2;
-            left: -$gutter/2;
+            top: -$gutter;
+            left: -$gutter;
           }
 
         }
