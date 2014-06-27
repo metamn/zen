@@ -44,6 +44,16 @@ html {
           color: $dark-grey;
           margin-bottom: $gutter/2;
           border-color: $grey;
+  
+          &:after {
+            content: '\25a0';
+            color: $background;
+            font-size: 150%;
+            display: inline-block;
+            position: relative;
+            left: -$gutter/4;
+            top: $gutter/8;
+          }
         }
 
         li {
