@@ -34,7 +34,6 @@ html {
         padding: row(1) 0;
       }
       
-      
       .intro {
         .summary {
           @include rows(1);
@@ -69,47 +68,56 @@ html {
         
         .benefits {
           position: relative;
-          left: $text-width + col(1) + $gutter;
-          height: row(2);
-          top: row(-2);
           
-          @include color($background, $color);
-          p {
-            text-align: center;
-          }
-          text-align: center;
+          // align to grid
+          left: $text-width + col(2);
+          top: -$text-width/2 + $gutter*3;
+          
+          // make it a black square
+          @include color($background, $color, $gutter);
+          height: calc(#{$text-width} - #{$gutter*4});
+          width: calc(#{$text-width} - #{$gutter*4});
+          
+          // rotate
           @include transform(rotate(45deg));
-          padding: $gutter*8 0;
-          
           h3, p {
             @include transform(rotate(-45deg));
+            
+            // adjust postion
+            position: relative;
+            left: -$gutter*2;
+            top: $gutter * 3;
+          }    
+          p {
+            left: -$gutter;
           }
-          
-          &:before, &:after {
-            content: '';
-            height: row(4);
-            border-left: 1px solid $color;
-            display: inline-block;
-            position: absolute;
-            left: $text-width/2 - $gutter;
-            top: row(-4) + $gutter;
-          }
+
+          // border
           &:after {
-            top: row(5);
+            content: '';
+            display: inline-block;
+            border: 1px solid $beauty;
+            position: absolute;
+            height: calc(#{$text-width} - #{$gutter});
+            width: calc(#{$text-width} - #{$gutter});
+            top: -$gutter/2;
+            left: -$gutter/2;
           }
+
         }
         
         .requirements {
           position: relative;
-          top: row(-5) - $gutter*2;
-          @include rows(8);
-          
+          top: row(-5);
+  
           p[role=contentinfo] {
             margin-top: row(1);
           }
         }
         
         footer {
+          position: relative;
+          top: row(-2);
         }
       }
       

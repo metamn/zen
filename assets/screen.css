@@ -159,42 +159,46 @@ html body {
           font-size: 200%; }
       html body .page-wrapper .main .benefits {
         position: relative;
-        left: 38.95833em;
-        height: 12.5em;
-        top: -12.5em;
+        left: 44.16667em;
+        top: -11.875em;
         color: white;
         background: #404040;
-        text-align: center;
+        padding: 1.25em;
+        height: calc(31.25em - 5em);
+        width: calc(31.25em - 5em);
         -moz-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         -o-transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
-        transform: rotate(45deg);
-        padding: 10em 0; }
-        html body .page-wrapper .main .benefits p {
-          text-align: center; }
+        transform: rotate(45deg); }
         html body .page-wrapper .main .benefits h3, html body .page-wrapper .main .benefits p {
           -moz-transform: rotate(-45deg);
           -ms-transform: rotate(-45deg);
           -o-transform: rotate(-45deg);
           -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg); }
-        html body .page-wrapper .main .benefits:before, html body .page-wrapper .main .benefits:after {
-          content: '';
-          height: 25em;
-          border-left: 1px solid #404040;
-          display: inline-block;
-          position: absolute;
-          left: 14.375em;
-          top: -23.75em; }
+          transform: rotate(-45deg);
+          position: relative;
+          left: -2.5em;
+          top: 3.75em; }
+        html body .page-wrapper .main .benefits p {
+          left: -1.25em; }
         html body .page-wrapper .main .benefits:after {
-          top: 31.25em; }
+          content: '';
+          display: inline-block;
+          border: 1px solid #ffb2b2;
+          position: absolute;
+          height: calc(31.25em - 1.25em);
+          width: calc(31.25em - 1.25em);
+          top: -0.625em;
+          left: -0.625em; }
       html body .page-wrapper .main .requirements {
         position: relative;
-        top: -33.75em;
-        height: 50em; }
+        top: -31.25em; }
         html body .page-wrapper .main .requirements p[role=contentinfo] {
           margin-top: 6.25em; }
+      html body .page-wrapper .main footer {
+        position: relative;
+        top: -12.5em; }
     html body .page-wrapper .sidebar {
       font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
       border-left: 1px solid #e5e5e5; }
