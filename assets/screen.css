@@ -141,7 +141,32 @@ html body {
       max-width: 31.25em;
       position: absolute;
       left: 46.66667em;
-      padding: 6.25em 0;
+      padding: 6.25em 0; }
+    html body .page-wrapper .intro .summary {
+      height: 6.25em; }
+    html body .page-wrapper .intro .preamble p:first-of-type:after {
+      content: url(../assets/isometropolis.png);
+      max-width: 31.25em;
+      max-height: 18.75em;
+      overflow: hidden;
+      display: inline-block;
+      margin-top: 1.25em; }
+    html body .page-wrapper .main {
+      position: relative; }
+      html body .page-wrapper .main .explanation {
+        width: 70.20833em; }
+        html body .page-wrapper .main .explanation p, html body .page-wrapper .main .explanation h3 {
+          font-size: 200%; }
+      html body .page-wrapper .main .benefits {
+        position: relative;
+        left: 38.95833em;
+        height: 0; }
+      html body .page-wrapper .main .requirements {
+        height: 50em; }
+        html body .page-wrapper .main .requirements p[role=contentinfo] {
+          margin-top: 6.25em; }
+    html body .page-wrapper .sidebar {
+      font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
       border-left: 1px solid #e5e5e5; }
       html body .page-wrapper .sidebar h3, html body .page-wrapper .sidebar ul li {
         padding-left: 1.25em;
@@ -164,36 +189,11 @@ html body {
         margin-bottom: 0.625em; }
         html body .page-wrapper .sidebar li a {
           border-bottom: 0; }
-    html body .page-wrapper .intro .summary {
-      height: 6.25em; }
-    html body .page-wrapper .intro .preamble p:first-of-type:after {
-      content: url(../assets/isometropolis.png);
-      max-width: 31.25em;
-      max-height: 18.75em;
-      overflow: hidden;
-      display: inline-block;
-      margin-top: 1.25em; }
-    html body .page-wrapper .main {
-      position: relative; }
-      html body .page-wrapper .main .explanation {
-        width: 62.5em; }
-        html body .page-wrapper .main .explanation p, html body .page-wrapper .main .explanation h3 {
-          font-size: 150%; }
-      html body .page-wrapper .main .benefits {
-        position: relative;
-        left: 38.95833em;
-        height: 0; }
-      html body .page-wrapper .main .requirements {
-        height: 50em; }
-        html body .page-wrapper .main .requirements p[role=contentinfo] {
-          margin-top: 6.25em; }
-    html body .page-wrapper .sidebar {
-      font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif; }
-      html body .page-wrapper .sidebar .wrapper .design-selection ul li a.design-name {
-        font-style: italic; }
-      html body .page-wrapper .sidebar .wrapper .design-selection ul li a.designer-name {
-        font-variant: small-caps;
-        letter-spacing: 1px; }
+          html body .page-wrapper .sidebar li a.design-name {
+            font-style: italic; }
+          html body .page-wrapper .sidebar li a.designer-name {
+            font-variant: small-caps;
+            letter-spacing: 1px; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle {
   position: fixed;

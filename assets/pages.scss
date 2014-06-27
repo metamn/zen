@@ -32,39 +32,6 @@ html {
         position: absolute;
         left: $text-width + col(2) + $gutter*2;
         padding: row(1) 0;
-        
-        border-left: 1px solid $grey;
-        
-        h3, ul li {
-          padding-left: $gutter;
-          width: calc(100% - #{$gutter});
-        }
-
-        h3 {
-          color: $dark-grey;
-          margin-bottom: $gutter/2;
-          border-color: $grey;
-  
-          &:after {
-            content: '\25a0';
-            color: $background;
-            font-size: 150%;
-            display: inline-block;
-            position: relative;
-            left: -$gutter/4;
-            top: $gutter/8;
-          }
-        }
-
-        li {
-          border-bottom: 1px solid $grey;
-          padding-bottom: $gutter/2;
-          margin-bottom: $gutter/2;
-  
-          a {
-            border-bottom: 0;
-          }
-        }
       }
       
       
@@ -98,9 +65,9 @@ html {
         position: relative;
         
         .explanation {
-          width: $text-width * 2;
+          width: $text-width * 2 + col(1) + $gutter;
           p, h3 {
-            font-size: 150%;
+            font-size: 200%;
           }
         }
         
@@ -125,33 +92,48 @@ html {
       .sidebar {
         font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
         
+        border-left: 1px solid $grey;
         
-        .wrapper {
-          .design-selection {
-            ul {
-              li {
-                a {
-                  &.design-name {
-                    font-style: italic;
-                  }
-            
-                  &.designer-name {
-                    font-variant: small-caps;
-                    letter-spacing: 1px;
-                  }
-                }
-              }
-            }
-          }
-          
-          .design-archives {
-            
-          }
-          
-          .zen-resources {
-            
+        h3, ul li {
+          padding-left: $gutter;
+          width: calc(100% - #{$gutter});
+        }
+
+        h3 {
+          color: $dark-grey;
+          margin-bottom: $gutter/2;
+          border-color: $grey;
+  
+          &:after {
+            content: '\25a0';
+            color: $background;
+            font-size: 150%;
+            display: inline-block;
+            position: relative;
+            left: -$gutter/4;
+            top: $gutter/8;
           }
         }
+
+        li {
+          border-bottom: 1px solid $grey;
+          padding-bottom: $gutter/2;
+          margin-bottom: $gutter/2;
+  
+          a {
+            border-bottom: 0;
+    
+            &.design-name {
+              font-style: italic;
+            }
+      
+            &.designer-name {
+              font-variant: small-caps;
+              letter-spacing: 1px;
+            }
+          }
+        }
+        
       }   
     }
   }
