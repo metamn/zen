@@ -36,10 +36,6 @@ html {
       
       
       .intro {
-        header {
-          
-        }
-        
         .summary {
           @include rows(1);
         }
@@ -75,6 +71,19 @@ html {
           position: relative;
           left: $text-width + col(1) + $gutter;
           height: 0;
+          
+          &:before, &:after {
+            content: '';
+            height: row(4);
+            border-left: 1px solid;
+            display: inline-block;
+            position: absolute;
+            left: $text-width/2 - $gutter;
+            top: row(-4) + $gutter*2;
+          }
+          &:after {
+            top: row(2) + $gutter;
+          }
         }
         
         .requirements {

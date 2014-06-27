@@ -161,6 +161,16 @@ html body {
         position: relative;
         left: 38.95833em;
         height: 0; }
+        html body .page-wrapper .main .benefits:before, html body .page-wrapper .main .benefits:after {
+          content: '';
+          height: 25em;
+          border-left: 1px solid;
+          display: inline-block;
+          position: absolute;
+          left: 14.375em;
+          top: -22.5em; }
+        html body .page-wrapper .main .benefits:after {
+          top: 13.75em; }
       html body .page-wrapper .main .requirements {
         height: 50em; }
         html body .page-wrapper .main .requirements p[role=contentinfo] {
