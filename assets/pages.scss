@@ -46,6 +46,12 @@ html {
                 content: url(../assets/isometropolis.png);
                 max-width: $text-width;
                 max-height: row(3);
+                //content: ' ';
+                //width: $text-width;
+                //height: row(3);
+                @include background-image(linear-gradient(left, #878787, yellow, #878787));
+                background-size: 50% 100%;
+                @include animation(background-color 5s infinite);
                 overflow: hidden;
                 display: inline-block;
                 margin-top: $gutter;

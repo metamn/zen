@@ -1,3 +1,14 @@
+@include keyframes(background-color) {
+  from {
+    background-position: 0;
+  }
+  
+  to {
+    background-position: 100%;
+  }
+}
+
+
 @include keyframes(rotate-border) {
   @for $i from 45 through 90 {
     $percent: 0% + $i - 45;

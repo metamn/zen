@@ -49,6 +49,24 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
+@-moz-keyframes background-color {
+  from {
+    background-position: 0; }
+
+  to {
+    background-position: 100%; } }
+@-webkit-keyframes background-color {
+  from {
+    background-position: 0; }
+
+  to {
+    background-position: 100%; } }
+@keyframes background-color {
+  from {
+    background-position: 0; }
+
+  to {
+    background-position: 100%; } }
 @-moz-keyframes rotate-border {
   0% {
     -moz-transform: rotate(45deg);
@@ -820,6 +838,14 @@ html body {
       content: url(../assets/isometropolis.png);
       max-width: 31.25em;
       max-height: 18.75em;
+      background-image: -moz-linear-gradient(left, #878787, #ffff00, #878787);
+      background-image: -o-linear-gradient(left, #878787, #ffff00, #878787);
+      background-image: -webkit-linear-gradient(left, #878787, #ffff00, #878787);
+      background-image: linear-gradient(to right, #878787, #ffff00, #878787);
+      background-size: 50% 100%;
+      -webkit-animation: background-color 5s infinite;
+      -moz-animation: background-color 5s infinite;
+      animation: background-color 5s infinite;
       overflow: hidden;
       display: inline-block;
       margin-top: 1.25em; }
