@@ -843,9 +843,9 @@ html body {
       background-image: -webkit-linear-gradient(left, #878787, #ffff00, #878787);
       background-image: linear-gradient(to right, #878787, #ffff00, #878787);
       background-size: 50% 100%;
-      -webkit-animation: background-color 5s infinite;
-      -moz-animation: background-color 5s infinite;
-      animation: background-color 5s infinite;
+      -webkit-animation: background-color 15s infinite;
+      -moz-animation: background-color 15s infinite;
+      animation: background-color 15s infinite;
       overflow: hidden;
       display: inline-block;
       margin-top: 1.25em; }
