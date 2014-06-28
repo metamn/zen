@@ -1,110 +1,13 @@
 @include keyframes(rotate-border) {
-  0% {
-    @include transform(rotate(45deg));
-  }
-  
-  10% {
-    @include transform(rotate(40deg));
-  }
-  
-  20% {
-    @include transform(rotate(35deg));
-  }
-  
-  30% {
-    @include transform(rotate(30deg));
-  }
-  
-  40% {
-    @include transform(rotate(25deg));
-  }
-  
-  50% {
-    @include transform(rotate(20deg));
-  }
-  
-  60% {
-    @include transform(rotate(15deg));
-  }
-  
-  70% {
-    @include transform(rotate(10deg));
-  }
-  
-  80% {
-    @include transform(rotate(5deg));
-  }
-  
-  90% {
-    @include transform(rotate(0deg));
-  }
-  
-}
-
-@include keyframes(rotate-text) {
-  $gutter: 1.25em;
-  
-  0% {
-    @include transform(rotate(-45deg));
-    left: -$gutter*2;
-    top: $gutter * 3;
-  }
-  
-  10% {
-    @include transform(rotate(-40deg));
-    left: -$gutter*2 + 1*0.22;
-    top: $gutter * 3 - 1*0.33;
-  }
-  
-  20% {
-    @include transform(rotate(-35deg));
-    left: -$gutter*2 + 2*0.22;
-    top: $gutter * 3 - 2*0.33;
-  }
-  
-  30% {
-    @include transform(rotate(-30deg));
-    left: -$gutter*2 + 3*0.22;
-    top: $gutter * 3 - 3*0.33;
-  }
-  
-  40% {
-    @include transform(rotate(-25deg));
-    left: -$gutter*2 + 4*0.22;
-    top: $gutter * 3 - 4*0.33;
-  }
-  
-  50% {
-    @include transform(rotate(-20deg));
-    left: -$gutter*2 + 5*0.22;
-    top: $gutter * 3 - 5*0.33;
-  }
-  
-  60% {
-    @include transform(rotate(-15deg));
-    left: -$gutter*2 + 6*0.22;
-    top: $gutter * 3 - 6*0.33;
-  }
-  
-  70% {
-    @include transform(rotate(-10deg));
-    left: -$gutter*2 + 7*0.22;
-    top: $gutter * 3 - 7*0.33;
-  }
-  
-  80% {
-    @include transform(rotate(-5deg));
-    left: -$gutter*2 + 8*0.22;
-    top: $gutter * 3 - 8*0.33;
-  }
-  
-  90% {
-    @include transform(rotate(0deg));
-    left: -$gutter*2 + 9*0.22;
-    top: $gutter * 3 - 9*0.33;
+  @for $i from 45 through 90 {
+    $percent: 0% + $i - 45;
+    $grade: $i + 'deg';
+    
+    #{$percent} {
+      @include transform(rotate(#{$grade}));
+    }
   }
 }
-
 
 
 @mixin animation($animation1, $animation2: false, $animation3: false, $animation4: false, $animation5: false, $animation6: false, $animation7: false) {
