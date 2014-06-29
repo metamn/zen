@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700|Old+Standard+TT:400,400italic,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|Old+Standard+TT:400,400italic,700);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -763,18 +763,18 @@ h1, h2, h3 {
   float: left;
   font-weight: bold; }
 
-h3 {
+h1 {
   margin-top: 3.75em;
   margin-bottom: calc(1.25em - 1px);
   border-bottom: 1px solid; }
 
-h2 {
+h3 {
   margin-top: 2.5em;
   border-bottom: 0.625em solid;
   padding-bottom: 0.625em;
   margin-bottom: 1.25em; }
 
-h1 {
+h2 {
   margin-top: 3.125em;
   color: white;
   background: black;
@@ -854,9 +854,26 @@ html body {
       position: relative;
       z-index: 1; }
       html body .page-wrapper .main .explanation {
-        width: 70.20833em; }
+        width: 70.20833em;
+        color: white;
+        background: black;
+        margin-top: 9em; }
         html body .page-wrapper .main .explanation p, html body .page-wrapper .main .explanation h3 {
-          font-size: 200%; }
+          font-size: 200%;
+          font-weight: 300;
+          padding: 0.625em; }
+        html body .page-wrapper .main .explanation h3 {
+          border-width: 1px; }
+        html body .page-wrapper .main .explanation p {
+          width: 45%;
+          padding-right: 8.5%;
+          float: left;
+          border-right: 1px solid; }
+          html body .page-wrapper .main .explanation p:last-of-type {
+            padding-right: 0;
+            border-right: 0;
+            width: 40%;
+            font-size: larger; }
       html body .page-wrapper .main .benefits {
         position: relative;
         left: 44.16667em;
@@ -910,9 +927,12 @@ html body {
         padding-left: 1.25em;
         width: calc(100% - 1.25em); }
       html body .page-wrapper .sidebar h3 {
-        color: #4c4c4c;
         margin-bottom: 0.625em;
-        border-color: #999999; }
+        border-color: #999999;
+        border-width: 1px;
+        font-weight: normal;
+        padding-bottom: 0;
+        padding-top: 0.625em; }
         html body .page-wrapper .sidebar h3:after {
           content: '\25a0';
           color: white;
@@ -927,6 +947,8 @@ html body {
         margin-bottom: 0.625em; }
         html body .page-wrapper .sidebar li a {
           border-bottom: 0; }
+          html body .page-wrapper .sidebar li a:hover {
+            border-bottom: 1px solid; }
           html body .page-wrapper .sidebar li a.design-name {
             font-style: italic; }
           html body .page-wrapper .sidebar li a.designer-name {

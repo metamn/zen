@@ -68,13 +68,31 @@ html {
         
         .explanation {
           width: $text-width * 2 + col(1) + $gutter;
+          @include color($background, $color);
+          margin-top: 9em;
           
           p, h3 {
             font-size: 200%;
+            font-weight:300;
+            padding: $gutter/2;
+          }
+          
+          h3 {
+            border-width: 1px;
           }
           
           p {
+            width: 45%;
+            padding-right: 8.5%;
+            float: left;
+            border-right: 1px solid;
             
+            &:last-of-type {
+              padding-right: 0;
+              border-right: 0;
+              width: 40%;
+              font-size: larger;
+            }
           }
         }
         
@@ -154,10 +172,15 @@ html {
         }
 
         h3 {
-          color: $dark-grey;
           margin-bottom: $gutter/2;
           border-color: $grey;
+          border-width: 1px;
+          font-weight: normal;
   
+          padding-bottom: 0;
+          padding-top: $gutter/2;
+  
+          // Removing the colon
           &:after {
             content: '\25a0';
             color: $background;
@@ -176,6 +199,10 @@ html {
   
           a {
             border-bottom: 0;
+    
+            &:hover {
+              border-bottom: 1px solid;
+            }
     
             &.design-name {
               font-style: italic;
