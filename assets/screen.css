@@ -2,6 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700|Old+Standard+TT:400,400italic,700);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -776,7 +777,7 @@ h2 {
 h1 {
   margin-top: 3.125em;
   color: white;
-  background: #404040;
+  background: black;
   padding: 0.3125em;
   margin-bottom: 1.25em;
   width: calc(100% - 0.625em); }
@@ -795,10 +796,10 @@ p {
 html body {
   width: 100%;
   float: left;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 100%;
   line-height: 1.25;
-  background: #404040; }
+  background: black; }
   @media only screen and (max-width: 47.999em) {
     html body {
       font-size: 87.5%; } }
@@ -806,17 +807,17 @@ html body {
     html body {
       font-size: 125%; } }
   html body a {
-    color: #7f7f7f;
+    color: #4c4c4c;
     text-decoration: none;
     border-bottom: 1px solid; }
     html body a:hover {
-      color: #404040; }
+      color: black; }
   html body .page-wrapper {
     width: 100%;
     float: left;
     margin: 1.25em;
     width: auto;
-    color: #404040;
+    color: black;
     background: white; }
     html body .page-wrapper .intro, html body .page-wrapper header, html body .page-wrapper .summary, html body .page-wrapper .preamble, html body .page-wrapper .main, html body .page-wrapper .explanation, html body .page-wrapper .participation, html body .page-wrapper .benefits, html body .page-wrapper .requirements, html body .page-wrapper footer, html body .page-wrapper .sidebar, html body .page-wrapper .design-selection, html body .page-wrapper .design-archives, html body .page-wrapper .zen-resources {
       width: 100%;
@@ -868,7 +869,7 @@ html body {
         html body .page-wrapper .main .benefits:before {
           content: '';
           display: inline-block;
-          background: #404040;
+          background: black;
           width: calc(31.25em - 5em);
           height: calc(31.25em - 5em);
           position: absolute;
@@ -882,7 +883,7 @@ html body {
         html body .page-wrapper .main .benefits:after {
           content: '';
           display: inline-block;
-          border: 0.625em dashed #404040;
+          border: 0.625em dashed black;
           position: absolute;
           height: calc(31.25em - 1.25em);
           width: calc(31.25em - 1.25em);
@@ -903,15 +904,15 @@ html body {
         position: relative;
         top: -12.5em; }
     html body .page-wrapper .sidebar {
-      font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
-      border-left: 1px solid #e5e5e5; }
+      font-family: "Old Standard TT", serif;
+      border-left: 1px solid #999999; }
       html body .page-wrapper .sidebar h3, html body .page-wrapper .sidebar ul li {
         padding-left: 1.25em;
         width: calc(100% - 1.25em); }
       html body .page-wrapper .sidebar h3 {
-        color: #7f7f7f;
+        color: #4c4c4c;
         margin-bottom: 0.625em;
-        border-color: #e5e5e5; }
+        border-color: #999999; }
         html body .page-wrapper .sidebar h3:after {
           content: '\25a0';
           color: white;
@@ -921,7 +922,7 @@ html body {
           left: -0.3125em;
           top: 0.15625em; }
       html body .page-wrapper .sidebar li {
-        border-bottom: 1px solid #e5e5e5;
+        border-bottom: 1px solid #999999;
         padding-bottom: 0.625em;
         margin-bottom: 0.625em; }
         html body .page-wrapper .sidebar li a {
@@ -930,7 +931,12 @@ html body {
             font-style: italic; }
           html body .page-wrapper .sidebar li a.designer-name {
             font-variant: small-caps;
-            letter-spacing: 1px; }
+            letter-spacing: 1px;
+            font-family: "Lato", sans-serif;
+            font-size: smaller;
+            color: white;
+            background: black;
+            padding: 0.15625em 0.3125em; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle {
   position: fixed;

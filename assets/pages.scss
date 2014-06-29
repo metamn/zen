@@ -68,8 +68,13 @@ html {
         
         .explanation {
           width: $text-width * 2 + col(1) + $gutter;
+          
           p, h3 {
             font-size: 200%;
+          }
+          
+          p {
+            
           }
         }
         
@@ -139,7 +144,7 @@ html {
       }
       
       .sidebar {
-        font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+        font-family: $serif;
         
         border-left: 1px solid $grey;
         
@@ -179,6 +184,9 @@ html {
             &.designer-name {
               font-variant: small-caps;
               letter-spacing: 1px;
+              font-family: $sans-serif;
+              font-size: smaller;
+              @include color($background, $color, $gutter/8 $gutter/4);
             }
           }
         }
