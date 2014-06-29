@@ -868,7 +868,8 @@ html body {
           width: 45%;
           padding-right: 8.5%;
           float: left;
-          border-right: 1px solid; }
+          border-right: 1px solid;
+          line-height: 1.5; }
           html body .page-wrapper .main .explanation p:last-of-type {
             padding-right: 0;
             border-right: 0;
@@ -914,9 +915,22 @@ html body {
           margin-left: 1.25em; }
       html body .page-wrapper .main .requirements {
         position: relative;
-        top: -31.25em; }
-        html body .page-wrapper .main .requirements p[role=contentinfo] {
-          margin-top: 6.25em; }
+        top: -31.25em;
+        counter-reset: requirements; }
+        html body .page-wrapper .main .requirements p {
+          counter-increment: requirements;
+          position: relative; }
+          html body .page-wrapper .main .requirements p:before {
+            color: white;
+            background: black;
+            padding: 0.3125em 0.625em;
+            content: counter(requirements);
+            display: inline-block;
+            position: absolute;
+            left: -2.5em;
+            top: 0.3125em; }
+          html body .page-wrapper .main .requirements p[role="contentinfo"]:before {
+            display: none; }
       html body .page-wrapper .main footer {
         position: relative;
         top: -12.5em; }

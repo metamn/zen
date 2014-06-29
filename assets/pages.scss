@@ -86,6 +86,7 @@ html {
             padding-right: 8.5%;
             float: left;
             border-right: 1px solid;
+            line-height: 1.5;
             
             &:last-of-type {
               padding-right: 0;
@@ -149,10 +150,26 @@ html {
         .requirements {
           position: relative;
           top: row(-5);
-  
-          p[role=contentinfo] {
-            margin-top: row(1);
-          }
+          
+  counter-reset: requirements;
+  p {
+    counter-increment: requirements;
+    position: relative;
+    &:before {
+      @include color($background, $color, $gutter/4 $gutter/2);
+      content: counter(requirements);
+      display: inline-block;
+      position: absolute;
+      left: -$gutter*2;
+      top: $gutter/4;
+    }
+    
+    &[role="contentinfo"] {
+      &:before {
+        display: none;
+      }
+    }
+  }
         }
         
         footer {
